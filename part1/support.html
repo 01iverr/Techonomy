@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset ="utf-8">
+  <title> Techonomy </title>
+</head>
+
+<body>
+    <h1> Contact us for Technical Support!  </h1>
+
+<form action="/sendData" method="POST">
+<table>
+    <tr>
+        <td>
+          <label for ="txtName">
+          Name*:
+          </label>
+        </td>
+        <td>
+             <input type="text"  id="txtName"  name="firstName" required minlength="3" maxlength="10"> <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtSurname">
+          Surname*:
+          </label>
+        </td>
+        <td>
+             <input type="text"   id="txtSurname" name="surName" required minlength="3" maxlength="10" ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtEmail">
+          E-mail*:
+          </label>
+        </td>
+        <td>
+             <input type="email" id="txtEmail" name="email" required minlength="3" maxlength="10"  ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtPhone">
+          Phone:
+          </label>
+        </td>
+        <td>
+             <input type="tel"  id="txtPhone" name="phone"  minlength="3" maxlength="10"> <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtBarcode">
+          Barcode:
+          </label>
+        </td>
+        <td>
+             <input type="tel"  id="txtBarcode" name="barcode" minlength="3" maxlength="10" ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtPurchase">
+      Purchase Date:
+          </label>
+        </td>
+        <td>
+            <input type="date"  id="txtPurchase" name="purchase" > <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtComments">
+          Problem*:
+          </label>
+        </td>
+        <td>
+          <textarea id ="txtComments" name="comments" rows="10" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="Receipt">
+          Receipt*:
+          </label>
+        </td>
+        <td>
+            <input id="Receipt" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" required  type="file" >
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <input type="reset" value="Clear all"><br >
+        </td>
+        <td>
+          <input type="submit" value="Subit my application"><br >
+        </td>
+    </tr>
+</table>
+</form>
+Please notice that you have to fullfil the areas with the star (*)
+</body>
+</html>
