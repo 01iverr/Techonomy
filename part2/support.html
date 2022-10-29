@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title> TechSupport </title>
+</head>
+
+<body>
+
+  <!-- ========================== HEADER ========================== -->
+  <header>
+        <!-- Menu -->
+        <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
+        <!-- Logo -->
+        <button id="home-button-image" onclick="window.location.href='index.html';">
+        </button>
+        <!-- Search -->
+        <div class="search-bar">
+          <input type="search" id="search-query" name="q" placeholder="Search...">
+          <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
+        </div>
+        <!-- Shopping Cart -->
+        <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
+        </button>
+        <!-- User Login -->
+        <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
+        </button>
+
+
+  </header>
+
+  <!-- ========================== Main ========================== -->
+    <h1> Contact us for Technical Support!  </h1>
+
+<form action="/sendData" method="POST">
+<table>
+    <tr>
+        <td>
+          <label for ="txtName">
+          Name*:
+          </label>
+        </td>
+        <td>
+             <input type="text"  id="txtName"  name="firstName" required minlength="3" maxlength="10"> <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtSurname">
+          Surname*:
+          </label>
+        </td>
+        <td>
+             <input type="text"   id="txtSurname" name="surName" required minlength="3" maxlength="10" ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtEmail">
+          E-mail*:
+          </label>
+        </td>
+        <td>
+             <input type="email" id="txtEmail" name="email" required minlength="3" maxlength="10"  ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtPhone">
+          Phone:
+          </label>
+        </td>
+        <td>
+             <input type="tel"  id="txtPhone" name="phone"  minlength="3" maxlength="10"> <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtBarcode">
+          Barcode:
+          </label>
+        </td>
+        <td>
+             <input type="tel"  id="txtBarcode" name="barcode" minlength="3" maxlength="10" ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtPurchase">
+      Purchase Date:
+          </label>
+        </td>
+        <td>
+            <input type="date"  id="txtPurchase" name="purchase" > <br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="txtComments">
+          Problem*:
+          </label>
+        </td>
+        <td>
+          <textarea id ="txtComments" name="comments" rows="10" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <label for ="Receipt">
+          Receipt*:
+          </label>
+        </td>
+        <td>
+            <input id="Receipt"  accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required  >
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <input type="reset" value="Clear all"><br >
+        </td>
+        <td>
+          <input type="submit" value="Submit my application"><br >
+        </td>
+    </tr>
+</table>
+</form>
+Please notice that you have to fullfil the areas with the star (*)
+
+<!-- ========================== FOOTER ========================== -->
+<footer>
+    <div id="footer-company-info">
+      <p>
+        <span id="footer-company">
+          The company
+        </span>
+
+        <a href="aboutus.html"> About us</a> <br>
+        <a href="support.html"> Support</a> <br>
+      </p>
+    </div>
+
+    <div id="footer-logo-social">
+      <!-- Logo -->
+      <img id="footer-logo" src="../media/header-footer/techonomy-white-bg.png" alt="TECHONOMY logo">
+
+      <br>
+
+      <!-- Social Media (they currently lead to the main page of each social media) -->
+      <div id="footer-social">
+        <button id="twitter-button-image" onclick=" window.open('http://twitter.com','_blank')">
+          <img src="../media/header-footer/twitter.png" alt="Twitter icon created by Bogdan Rosu - Flaticon">
+        </button>
+
+        <button id="instagram-button-image" onclick=" window.open('http://instagram.com','_blank')">
+          <img src="../media/header-footer/instagram.png" alt="Instagram icon created by Hight Quality Icons - Flaticon">
+        </button>
+
+        <button id="facebook-button-image" onclick=" window.open('http://facebook.com','_blank')">
+          <img src="../media/header-footer/facebook.png" alt="facebook icon created by Freepik - Flaticon">
+        </button>
+
+        <button id="youtube-button-image" onclick=" window.open('http://youtube.com','_blank')">
+          <img src="../media/header-footer/youtube.png" alt="Youtube icon created by Freepik - Flaticon ">
+        </button>
+      </div>
+
+    </div>
+
+    <p id="footer-contact">
+      <span id="footer-txt-contact">Contact us:</span> 0363-XXX-XXXX
+    </p>
+
+    <!-- Slogan -->
+    <img src="../media/header-footer/slogan.png" id="slogan" alt="TECHONOMY slogan" width="300">
+</footer>
+
+</body>
+</html>
