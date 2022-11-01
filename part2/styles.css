@@ -101,31 +101,6 @@ footer {
   left: 0px;
   position: absolute;
 }
-/*
-#twitter-button-image {
-  display: inline-block;
-  background-image: url("../media/header-footer/twitter.png");
-  position: absolute;
-}
-
-#instagram-button-image {
-  display: inline-block;
-  background-image: url("../media/header-footer/instagram.png");
-  position: absolute;
-}
-
-#facebook-button-image {
-  display: inline-block;
-  background-image: url("../media/header-footer/facebook.png");
-  position: absolute;
-}
-
-#youtube-button-image {
-  display: inline-block;
-  background-image: url("../media/header-footer/youtube.png");
-  position: absolute;
-} */
-
 
 /* FOOTER COMPANY INFO */
 #footer-company-info {
@@ -159,6 +134,29 @@ footer {
 #footer-social {
   margin-top: -15px;
 }
+#twitter-button-image,
+#instagram-button-image,
+#facebook-button-image,
+#youtube-button-image {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+#twitter-button-image {
+  background-image: url("../media/header-footer/twitter.png");
+  margin-right: 20px;
+}
+#instagram-button-image {
+  background-image: url("../media/header-footer/instagram.png");
+  margin-right: 20px;
+}
+#facebook-button-image {
+  background-image: url("../media/header-footer/facebook.png");
+  margin-right: 20px;
+}
+#youtube-button-image {
+  background-image: url("../media/header-footer/youtube.png");
+}
 
 /* FOOTER CONTACT TELEPHONE*/
 #footer-contact {
@@ -177,14 +175,202 @@ footer {
   right: 0;
 }
 
+/* ########## aboutProduct ########## */
+
+#product-page-components {
+  margin: 80px 200px 0px 200px;
+}
+
+#navigation-text {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background: #f0eee9;
+  border-radius: 6px;
+}
+
+.full-width-stripe {
+  background-color: #ffffaa;
+  margin-left: -208px;
+  margin-right: -208px;
+  padding: 10px 0px 10px 180px;
+  color: #301f0e;
+}
+
+#navigation-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#product-page-star-rating {
+  font-size: 22px;
+}
+
+/* small description */
+#product-page-main-image {
+  float: left;
+  width: 500px;
+  margin-right: 20px;
+}
+#product-page-small-info {
+  overflow: hidden;
+  margin-top: 80px;
+}
+#product-page-price {
+  font-size: 40px;
+  font-weight: bold;
+  color: #c50707;
+  margin-top: 30px;
+}
+
+/* add to cart button */
+#add-to-cart-button {
+  margin-top: 10px;
+  border: 2px;
+  border-radius: 4px;
+  background-color: #5bb356;
+  padding: 0.8em 3em;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+#add-to-cart-img {
+  float: right;
+  margin-left: 10px;
+  width: 25px;
+  margin-top: -4px;
+}
+
+/* description */
+#product-page-descr {
+  clear: both;
+}
+.descr-item {
+  display: inline-block;
+  margin-top: 30px;
+}
+.descr-item-title {
+  font-size: 20px;
+}
+img.descr-img-right {
+  width: 400px;
+  float: right;
+  margin-left: 20px;
+}
+img.descr-img-left {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+}
+.descr-txt {
+  margin-top: 60px;
+}
+
+/* manufacturer */
+#product-page-manufacturer {
+  margin-top: 60px;
+}
+#link-to-manufacturer {
+  margin-top: 30px;
+}
+
+/* features */
+#product-page-features {
+  margin-top: 60px;
+}
+.product-features-title {
+  margin-top: 30px;
+  font-size: 17px;
+}
+table.product-features {
+  margin-top: 10px;
+  width: 700px;
+  border-spacing: 0;
+  border-radius: 6px;
+  border-collapse: collapse;
+}
+table.product-features tr {
+  border: 2px solid white;
+  border-radius: 10px;
+  line-height: 200%;
+  background-color: #f0eee9;
+}
+table.product-features th {
+  color: #363433;
+  text-align: left;
+  width: 250px;
+  padding-left: 10px;
+}
+table.product-features td {
+  width: 250px;
+  padding-left: 10px;
+}
+
+/* reviews */
+#product-page-reviews {
+  margin-top: 60px;
+}
+#reviews-content {
+  margin-top: 20px;
+}
+#product-page-review-list {
+  list-style-type: none;
+}
+#product-page-review-list li {
+  padding: 10px;
+  background: #f0eee9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.reviewer-img {
+  float: left;
+  width: 40px;
+  margin-right: 10px;
+}
+.reviewer-name {
+  font-weight: bold;
+}
+
+/* ########## product-categories ########## */
+
+#product-categories-page-components {
+  margin: 80px 300px 0px 200px;
+}
+
+#product-categories-title {
+  margin-left: 100px;
+  color: #301f0e;
+}
+
+.product-categories-list {
+  list-style-type: none;
+  padding-left: 100px;
+}
+
+.product-categories-button {
+  width: 100%;
+  padding: 10px;
+  background: #ffffaa;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5c3814;
+}
+
+.product-categories-icon {
+  float: left;
+  margin: -3px 25px 0px 5px;
+  width: 25px;
+}
 
 /* ############################## */
 
 button {
   background: transparent;
-  border :none;
+  border: none;
   background-position: center;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
 }
