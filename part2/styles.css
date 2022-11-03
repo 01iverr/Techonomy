@@ -9,6 +9,11 @@ header{
   position: fixed;
 }
 
+h1::before{
+  content: "\a";
+  white-space: pre;
+}
+
 #menu-button-image{
   display: inline-block;
   background-image: url("../media/header-footer/menu-button-of-three-horizontal-lines.png");
@@ -102,22 +107,18 @@ footer {
   position: absolute;
 }
 
+p.footerletters{
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 50px;
+}
 /* FOOTER COMPANY INFO */
 #footer-company-info {
   display: inline-block;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 16px;
-  margin-left: 50px;
 }
-#footer-company {
-  font-size: 18px;
-  font-weight: bold;
-}
-#footer-company::after {
-  content: "\a";
-  white-space: pre;
-}
+
 
 /* FOOTER LOGO SOCIAL */
 #footer-logo-social {
@@ -159,15 +160,10 @@ footer {
 }
 
 /* FOOTER CONTACT TELEPHONE*/
-#footer-contact {
-  margin-left: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
+
 #footer-txt-contact {
   font-size: 13px;
-  font-weight: lighter;
+
 }
 
 #slogan {
@@ -363,9 +359,112 @@ table.product-features td {
   margin: -3px 25px 0px 5px;
   width: 25px;
 }
-
 /* ############################## */
+/* ############LINKS################## */
 
+/* unvisited link */
+a:link {
+  color: 	#E61C1C;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: darkslategrey;
+}
+
+/* mouse over link */
+a:hover {
+  color:green;
+}
+
+/* selected link */
+a:active {
+  color: darkslategrey;
+}
+
+a.tel{
+    color:black;
+}
+
+a.tel:hover {
+  color:maroon;
+}
+/* ################################### */
+
+/* About us names */
+abbr.bios{
+  text-decoration:inherit;
+  font-family: sans-serif;
+  color: maroon;
+}
+h2.bios{
+  background-color: #ffffaa;
+  margin-left: -208px;
+  margin-right: -208px;
+  padding:15px 25px 5px 220px;
+  color: #301f0e;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+
+
+img.gif{
+  float: right;
+  margin-left: 10px;
+  width: 25px;
+  margin-top: -4px;
+  width: 20%;
+}
+#gif2{
+    float:left;
+    margin-top: -100px;
+}
+
+img.bios{
+  float:right;
+  margin-top: 90px;
+  width: 300px;
+  height:300px;
+  border-radius: 20%;
+}
+
+ul.bios{
+  margin-left: 20px;
+  list-style-type: square;
+  position:static;
+}
+li.catTitle{
+  list-style-type: none;
+  margin-left: -25px;
+  text-decoration:inherit;
+  font-family: sans-serif;
+  color: maroon;
+}
+
+#ul2{
+  margin-right: 20px;
+}
+
+hr.bios{
+  position:block;
+  background-color: #fff;
+  border-top: 2px dotted  #ffffaa;
+}
+img.lbadges{
+  float:right;
+  position:inline;
+  margin-left: 10px;
+  width: 80px;
+  height:30px;
+}
+
+
+
+/* ################################### */
 button {
   background: transparent;
   border: none;

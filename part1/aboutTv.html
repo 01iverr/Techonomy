@@ -1,78 +1,54 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset ="utf-8">
+  <meta charset="utf-8">
   <title> Samsung Smart TV 55 &#8221; 4K UHD LED UE55AU7172 HDR (2021) </title>
 </head>
 
 <body>
-
   <!-- ========================== HEADER ========================== -->
   <header>
-    <table>
-      <tr>
-        <td>
-        <!-- Menu -->
-        <button id="menu-button-image">
-          <img src="../media/header-footer/menu-button-of-three-horizontal-lines.png" width="20" alt="Menu icon created by Freepik - Flaticon">
-        </button>
-        </td>
+    <!-- Menu -->
+    <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
+    <!-- Logo -->
+    <button id="home-button-image" onclick="window.location.href='index.html';">
+    </button>
+    <!-- Search -->
+    <div>
+      <input type="search" id="search-query" name="q" placeholder="Search...">
+      <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
+    </div>
+    <!-- Shopping Cart -->
+    <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
+    </button>
+    <!-- User Login -->
+    <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
+    </button>
 
-        <td>
-        <!-- Logo -->
-        <button id="home-button-image"  onclick="window.location.href='index.html';">
-          <img src="../media/header-footer/techonomy-white-bg.png" alt="TECHONOMY logo" width="240">
-        </button>
-        </td>
-
-        <td> <!-- Search -->
-        <button id="search-button-image">
-          <img src="../media/header-footer/magnifying-glass.png" alt="magnifying glass icon created by Freepik - Flaticon ">
-        </button>
-        </td>
-        <td>
-        <form id="form">
-          <input type="search" id="query" name="q" placeholder="Search...">
-        </form>
-        </td>
-
-        <td>
-        <!-- Shopping Cart -->
-        <button id="cart-button-image">
-          <img src="../media/header-footer/shopping-cart.png" alt="shopping cart icon created by Freepik - Flaticon ">
-        </button>
-        </td>
-
-        <td>
-        <!-- User Login -->
-        <button id="login-button-image">
-          <img src="../media/header-footer/user.png" alt="Login icon created by Sebastian Belalcazar - Flaticon ">
-        </button>
-        </td>
-      </tr>
-    </table>
 
   </header>
 
   <!-- ========================== Main ========================== -->
+  <div id="product-page-components">
 
-<p>
-  <a href="index.html">Home</a>
-  >
-  Home entertainment
-  >
-  Televisions <!-- TODO: link to html page -->
-</p>
- <h1> Samsung Smart TV 55" 4K UHD LED UE55AU7172 HDR (2021) <br>
-   ★★★★☆(503) </h1>
-<table>
-  <tr>
-    <td>
-      <img src="../media/indexpage/tv.png"
-        alt="An image of the product Samsung Smart TV 55&#8221; 4K UHD LED UE55AU7172 HDR (2021) Samsung"
-        width=500>
-    </td>
-    <td>
+    <p id="navigation-text">
+      <a href="index.html">Home</a>
+      >
+      Home entertainment
+      >
+      <a href="Category_TV.html">Televisions</a>
+    </p>
+    <h1>Samsung Smart TV 55" 4K UHD LED UE55AU7172 HDR (2021)
+    </h1>
+    <p id="product-page-star-rating">
+      ★★★★☆(503)
+    </p>
+
+    <img id="product-page-main-image" src="../media/indexpage/tv.png" alt="An image of the product Samsung Smart TV 55&#8221; 4K UHD LED UE55AU7172 HDR (2021) Samsung" title="Samsung Smart TV 55&#8221; 4K UHD LED UE55AU7172 HDR (2021) Samsung">
+    <div id="product-page-small-info">
+      <div id="product-page-small-descr">
+        <h2>Basic features:</h2>
         <p>
           Enjoy excellent <i>4K UHD</i> resolution thanks to the <i>Crystal Processor 4K</i>,
           incredible detail thanks to <i>HDR10+</i> support and sharp contrasts thanks
@@ -80,444 +56,458 @@
           with <i>Dolby Digital Plus</i> sound and <i>Q-Syphony</i> for the ultimate audio
           experience.
         </p>
+      </div>
 
-        <small>Product code: 035-689-525</small>
-        <br>
-        445.95$
-        <br>
-        <button id="add-to-cart-button">
-          Add to cart
-          <img src="../media/header-footer/shopping-cart.png" alt="shopping cart icon created by Freepik - Flaticon ">
-        </button>
-    </td>
-  </tr>
-</table>
+      <small>Product code: 035-689-525</small>
 
-<!-- Description -->
+      <div id="product-page-price"> 445.95$ </div>
 
-<h2>Description</h2>
+      <button id="add-to-cart-button">
+        Add to cart
+        <img id="add-to-cart-img" src="../media/laptop/shopping-cart-white.png" alt="A shopping cart icon created by Pixel perfect - Flaticon">
+      </button>
+    </div>
 
-<p>
-  Enjoy excellent <i>4K UHD</i> resolution thanks to the <i>Crystal Processor 4K</i>,
-  incredible detail thanks to <i>HDR10+</i> support and sharp contrasts thanks to the
-  <i>Contrast Enhancer</i>. Immerse yourself in your favorite content with <i>Dolby
-  Digital Plus</i> sound and <i>Q-Syphony</i> for the ultimate audio experience.
-</p>
+    <!-- Description -->
+    <div id="product-page-descr">
+      <div>
+        <h2>Description</h2>
+      </div>
 
-<table>
-  <tr>
-    <td>
-        <strong>PurColor</strong>
-        <br>
-        <strong>Impressive color for a vivid, realistic image</strong>
-        <br>
       <p>
-        <i>PurColor</i> makes watching movies as vivid as if you were there. It allows
-        the TV to display a huge range of colors, giving you impressive picture
-        quality for an exciting viewing experience.
+        Enjoy excellent <i>4K UHD</i> resolution thanks to the <i>Crystal Processor 4K</i>,
+        incredible detail thanks to <i>HDR10+</i> support and sharp contrasts thanks to the
+        <i>Contrast Enhancer</i>. Immerse yourself in your favorite content with <i>Dolby
+          Digital Plus</i> sound and <i>Q-Syphony</i> for the ultimate audio experience.
       </p>
-    </td>
-    <td>
-      <img src="../media/tv/20211119151806_gr_feature_fine_tuned_color_for_a_vibrant_lifelike_picture_404840610.jpeg"
-        alt="An image of the tv displaying a colorful tree showcasing the vivid
-        colors."
-        width=400>
-    </td>
-  </tr>
 
-  <tr>
-    <td>
-      <img src="../media/tv/20211119151806_p2_data.jpeg"
-        alt="An image of the Samsung Crystal Processor 4K."
-        width=400>
-    </td>
-    <td>
-        <strong>Crystal Processor 4K</strong>
-        <br>
-        <strong>Colors that touch reality, in 4K resolution</strong>
-        <br>
-      <p>
-        <i>Powerful 4K</i> upscaling ensures that your content appears on your screen
-        in <i>4K</i> resolution. Color expression becomes true thanks to color mapping
-        technology.
-      </p>
-    </td>
-  </tr>
+      <div>
+        <img src="../media/tv/20211119151806_gr_feature_fine_tuned_color_for_a_vibrant_lifelike_picture_404840610.jpeg" alt="An image of the tv displaying a colorful tree showcasing the vivid colors.">
+        <div>
+          <div>
+            <strong>
+              PurColor <br>
+              Impressive color for a vivid, realistic image
+            </strong>
+          </div>
+          <p>
+            <i>PurColor</i> makes watching movies as vivid as if you were there. It allows
+            the TV to display a huge range of colors, giving you impressive picture
+            quality for an exciting viewing experience.
+          </p>
+        </div>
+      </div>
 
-  <tr>
-    <td>
-        <strong>Motion Xcelerator</strong>
-        <br>
-        <strong>Smooth motion for a clear image</strong>
-        <br>
-      <p>
-        Enjoy clear image and high performance. <i>Crystal UHD</i> automatically
-        estimates and adjusts frames depending on the content source.
-      </p>
-    </td>
-    <td>
-      <img src="../media/tv/20211119151806_gr_feature_smooth_motion_for_a_clear_picture_414621078.jpeg"
-        alt="An image of the tv displaying a motorcycler on an off road track,
-        in motion."
-        width=400>
-    </td>
-  </tr>
+      <div>
+        <img src="../media/tv/20211119151806_p2_data.jpeg" alt="An image of the Samsung Crystal Processor 4K.">
+        <div>
+          <div>
+            <strong>
+              Crystal Processor 4K <br>
+              Colors that touch reality, in 4K resolution
+            </strong>
+          </div>
+          <p>
+            <i>Powerful 4K</i> upscaling ensures that your content appears on your screen
+            in <i>4K</i> resolution. Color expression becomes true thanks to color mapping
+            technology.
+          </p>
+        </div>
+      </div>
 
-  <tr>
-    <td>
-      <img src="../media/tv/20211119151807_p4_data_1.jpeg"
-        alt="Two images of the same flower next to each other, comparing FHD
-        (1920 X 1080) and 4K UHD (3840 X 2160)."
-        width=400>
-    </td>
-    <td>
-        <strong>4K UHD</strong>
-        <br>
-      <p>
-        The <i>4K UHD TV</i> has 4x more pixels than a <i>Full HD</i> resolution TV, offering
-        you sharp and clear images. Now you can see even the smallest details in
-        the scene.
-      </p>
-    </td>
-  </tr>
+      <div>
+        <img src="../media/tv/20211119151806_gr_feature_smooth_motion_for_a_clear_picture_414621078.jpeg" alt="An image of the tv displaying a motorcycler on an off road track, in motion.">
+        <div>
+          <div>
+            <strong>
+              Motion Xcelerator <br>
+              Smooth motion for a clear image
+            </strong>
+          </div>
+          <p>
+            Enjoy clear image and high performance. <i>Crystal UHD</i> automatically
+            estimates and adjusts frames depending on the content source.
+          </p>
+        </div>
+      </div>
 
-  <tr>
-    <td>
-        <strong>Look at the picture, not the TV</strong>
-        <br>
-        <strong>Frameless three-sided design</strong>
-        <br>
-      <p>
-        A slim and elegant design that introduces you to an impressive image.
-        Crafted with a beautiful minimalist style from every angle and with the
-        absence of bezels, it sets new standards in design.
-      </p>
-    </td>
-    <td>
-      <img src="../media/tv/20211119151807_p7_data.jpeg"
-        alt="An image of a long, squared and grey hallway with line lights every
+      <div>
+        <img src="../media/tv/20211119151807_p4_data_1.jpeg" alt="Two images of the same flower next to each other, comparing FHD (1920 X 1080) and 4K UHD (3840 X 2160).">
+        <div>
+          <div>
+            <strong>4K UHD</strong>
+          </div>
+          <p>
+            The <i>4K UHD TV</i> has 4x more pixels than a <i>Full HD</i> resolution TV, offering
+            you sharp and clear images. Now you can see even the smallest details in
+            the scene.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img src="../media/tv/20211119151807_p7_data.jpeg" alt="An image of a long, squared and grey hallway with line lights every
         few meters following the wall up and going up the ceiling. There's a mirror
-        placed facing the other end of the hallway, close to the camera."
-        width=400>
-    </td>
-  </tr>
-</table>
+        placed facing the other end of the hallway, close to the camera.">
+        <div>
+          <div>
+            <strong>
+              Look at the picture, not the TV <br>
+              Frameless three-sided design
+            </strong>
+          </div>
+          <p>
+            A slim and elegant design that introduces you to an impressive image.
+            Crafted with a beautiful minimalist style from every angle and with the
+            absence of bezels, it sets new standards in design.
+          </p>
+        </div>
+      </div>
 
-<h2> Μanufacturer</h2>
-<a title="All products by Samsung" href="https://www.samsung.com" target="_blank">Samsung</a>
+    </div>
 
-<h2>Features</h2>
+    <!-- Manufacturer -->
+    <div id="product-page-manufacturer">
+      <div>
+        <h2>Μanufacturer</h2>
+      </div>
+      <div id="link-to-manufacturer">
+        <a title="All products by Samsung" href="https://www.samsung.com" target="_blank">Samsung</a>
+      </div>
+    </div>
 
-<strong>Screen</strong>
-<table>
-    <tr>
-      <td>Diagonal</td>
-      <td>55"</td>
-    </tr>
-    <tr>
-      <td>Resolution</td>
-      <td>4K Ultra HD</td>
-    </tr>
-    <tr>
-      <td>Refresh Rate</td>
-      <td>50/60 Hz</td>
-    </tr>
-    <tr>
-      <td>Panel type</td>
-      <td>Edge LED</td>
-    </tr>
-    <tr>
-      <td>HDR Type</td>
-      <td>HDR, HDR10+, HLG</td>
-    </tr>
-    <tr>
-      <td>Local Dimming</td>
-      <td>No</td>
-    </tr>
-</table>
+    <!-- Features -->
+    <div id="product-page-features">
+      <div>
+        <h2>Features</h2>
+      </div>
 
-<strong>Sound</strong>
-<table>
-    <tr>
-      <td>Channels</td>
-      <td>Stereo</td>
-    </tr>
-    <tr>
-      <td>Power</td>
-      <td>20W</td>
-    </tr>
-    <tr>
-      <td>Audio Standards</td>
-      <td>Dolby Digital Plus</td>
-    </tr>
-</table>
+      <div>
+        <strong>Screen</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Diagonal</th>
+          <td>55"</td>
+        </tr>
+        <tr>
+          <th>Resolution</th>
+          <td>4K Ultra HD</td>
+        </tr>
+        <tr>
+          <th>Refresh Rate</th>
+          <td>50/60 Hz</td>
+        </tr>
+        <tr>
+          <th>Panel type</th>
+          <td>Edge LED</td>
+        </tr>
+        <tr>
+          <th>HDR Type</th>
+          <td>HDR, HDR10+, HLG</td>
+        </tr>
+        <tr>
+          <th>Local Dimming</th>
+          <td>No</td>
+        </tr>
+      </table>
 
-<strong>Features & Functions</strong>
-<table>
-    <tr>
-      <td>Receiver</td>
-      <td>DVB-C, DVB-S2, DVB-T2</td>
-    </tr>
-    <tr>
-      <td>Media Player</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>PVR recording</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Hotel Mode</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Voice commands</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>HbbTV</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>VRR</td>
-      <td>No</td>
-    </tr>
-</table>
+      <div>
+        <strong>Sound</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Channels</th>
+          <td>Stereo</td>
+        </tr>
+        <tr>
+          <th>Power</th>
+          <td>20W</td>
+        </tr>
+        <tr>
+          <th>Audio Standards</th>
+          <td>Dolby Digital Plus</td>
+        </tr>
+      </table>
 
-<strong>Smart Features</strong>
-<table>
-    <tr>
-      <td>Netflix</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>YouTube</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Spotify</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Software</td>
-      <td>Tizen</td>
-    </tr>
-    <tr>
-      <td>Smart Assistant</td>
-      <td>Lacks</td>
-    </tr>
-    <tr>
-      <td>Smart Ecosystem</td>
-      <td>Alexa</td>
-    </tr>
-</table>
+      <div>
+        <strong>Features & Functions</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Receiver</th>
+          <td>DVB-C, DVB-S2, DVB-T2</td>
+        </tr>
+        <tr>
+          <th>Media Player</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>PVR recording</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Hotel Mode</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Voice commands</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>HbbTV</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>VRR</th>
+          <td>No</td>
+        </tr>
+      </table>
 
-<strong>Wired Connections</strong>
-<table>
-    <tr>
-      <td>Set of HDMI Ports</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>HDMI 2.1 crowd</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Lots of USB</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Ethernet</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Digital Audio Optical</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Headphones</td>
-      <td>No</td>
-    </tr>
-</table>
+      <div>
+        <strong>Smart Features</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Netflix</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>YouTube</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Spotify</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Software</th>
+          <td>Tizen</td>
+        </tr>
+        <tr>
+          <th>Smart Assistant</th>
+          <td>Lacks</td>
+        </tr>
+        <tr>
+          <th>Smart Ecosystem</th>
+          <td>Alexa</td>
+        </tr>
+      </table>
 
-<strong>Wireless Connections</strong>
-<table>
-    <tr>
-      <td>Wi-Fi</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Bluetooth</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Miracast</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Chromecast Built-In</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Screen Mirroring</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>AirPlay</td>
-      <td>Yes</td>
-    </tr>
-</table>
+      <div>
+        <strong>Wired Connections</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Set of HDMI Ports</th>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th>HDMI 2.1 crowd</th>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>Lots of USB</th>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>Ethernet</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Digital Audio Optical</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Headphones</th>
+          <td>No</td>
+        </tr>
+      </table>
 
-<strong>General</strong>
-<table>
-    <tr>
-      <td>Release year</td>
-      <td>2021</td>
-    </tr>
-    <tr>
-      <td>Weight</td>
-      <td>14.2 kg</td>
-    </tr>
-    <tr>
-      <td>VESA Mount</td>
-      <td>200 x 200 mm</td>
-    </tr>
-</table>
+      <div>
+        <strong>Wireless Connections</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Wi-Fi</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Bluetooth</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Miracast</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Chromecast Built-In</th>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th>Screen Mirroring</th>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>AirPlay</th>
+          <td>Yes</td>
+        </tr>
+      </table>
 
-<strong>Energy Label</strong>
-<table>
-    <tr>
-      <td>Energy Class</td>
-      <td>G</td>
-    </tr>
-</table>
+      <div>
+        <strong>General</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Release year</th>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>14.2 kg</td>
+        </tr>
+        <tr>
+          <th>VESA Mount</th>
+          <td>200 x 200 mm</td>
+        </tr>
+      </table>
 
-<strong>Dimensions (Without Base)</strong>
-<table>
-    <tr>
-      <td>Width</td>
-      <td>1230.5 mm</td>
-    </tr>
-    <tr>
-      <td>Height</td>
-      <td>707.2 mm</td>
-    </tr>
-    <tr>
-      <td>Thickness</td>
-      <td>59.9 mm</td>
-    </tr>
-</table>
+      <div>
+        <strong>Energy Label</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Energy Class</th>
+          <td>G</td>
+        </tr>
+      </table>
 
-<strong>Dimensions (with Base)</strong>
-<table>
-    <tr>
-      <td>Width</td>
-      <td>1230.5 mm</td>
-    </tr>
-    <tr>
-      <td>Height</td>
-      <td>783.3 mm</td>
-    </tr>
-    <tr>
-      <td>Thickness</td>
-      <td>250.2 mm</td>
-    </tr>
-</table>
+      <div>
+        <strong>Dimensions (Without Base)</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Width</th>
+          <td>1230.5 mm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>707.2 mm</td>
+        </tr>
+        <tr>
+          <th>Thickness</th>
+          <td>59.9 mm</td>
+        </tr>
+      </table>
 
-<h2>Reviews</h2>
+      <div>
+        <strong>Dimensions (with Base)</strong>
+      </div>
+      <table>
+        <tr>
+          <th>Width</th>
+          <td>1230.5 mm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>783.3 mm</td>
+        </tr>
+        <tr>
+          <th>Thickness</th>
+          <td>250.2 mm</td>
+        </tr>
+      </table>
 
-<strong>Total score ★★★★☆(503)</strong>
+    </div>
 
-<ul> <!-- TODO: remove bullets with css in next part -->
-    <li>
-        <table> <!-- Profile info -->
-            <tr>
-                <td> <!-- Profile image -->
-                  <img src="../media/tv/users/astronaut.png"
-                    alt="User profile picture. created by Anastasia Petroulaki"
-                    width=40>
-                </td>
-                <td> <!-- User name -->
-                  <p><b>Stella Arman</b></p>
-                </td>
-                <td> <!-- Star Rating -->
-                    <p>★★★★★</p>
-                </td>
-            </tr>
-        </table>
-        <p>
-            The sound is not perfect, but for the bedroom it is not a problem.
-            The picture is fine, the menu familiar and reason for choosing it.
-        </p>
-    </li>
+    <!-- Reviews -->
+    <div id="product-page-reviews">
+      <div>
+        <h2>Reviews</h2>
+      </div>
 
-    <li>
-        <table> <!-- Profile info -->
-            <tr>
-                <td> <!-- Profile image -->
-                  <img src="../media/tv/users/blue-mage.jpg"
-                    alt="User profile picture.created by Anastasia Petroulaki"
-                    width=40>
-                </td>
-                <td> <!-- User name -->
-                  <p><b>Jacob Dorman</b></p>
-                </td>
-                <td> <!-- Star Rating -->
-                    <p>★★★★☆</p>
-                </td>
-            </tr>
-        </table>
-        <p>
-            I've had it for about 5 months. For the money i got (580€) it is good.
-            The image is clear, and so is teh sound. The colors are clear and
-            vibrant, a lot better than other models ive had in the past.
-        </p>
-    </li>
-</ul>
+      <div id="reviews-content">
+        <strong>Total score ★★★★☆(503)</strong>
 
-<!-- ========================== FOOTER ========================== -->
-<footer>
-<table>
-  <tr>
-    <td>
-      <p><b>The company</b></p>
-      <a href="aboutus.html"> About us</a> <br>
-      <a href="support.html"> Support</a> <br>
+        <ul id="product-page-review-list">
+          <li>
+            <!-- Profile image -->
+            <img src="../media/tv/users/astronaut.png" alt="User profile picture. Created by Anastasia Petroulaki">
+            <!-- User name -->
+            <p>Stella Arman</p>
+            <!-- Star Rating -->
+            <p>★★★★★</p>
 
-      <p>Contact us: 0363-XXX-XXXX</p>
-    </td>
+            <p>
+              The sound is not perfect, but for the bedroom it is not a problem.
+              The picture is fine, the menu familiar and reason for choosing it.
+            </p>
+          </li>
 
-    <td>
+          <li>
+            <!-- Profile image -->
+            <img src="../media/tv/users/blue-mage.jpg" alt="User profile picture. Created by Anastasia Petroulaki">
+            <!-- User name -->
+            <p>Jacob Dorman</p>
+            <!-- Star Rating -->
+            <p>★★★★☆</p>
+
+            <p>
+              I've had it for about 5 months. For the money i got (580€) it is good.
+              The image is clear, and so is teh sound. The colors are clear and
+              vibrant, a lot better than other models ive had in the past.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ========================== FOOTER ========================== -->
+  <footer>
+    <div id="footer-company-info">
+      <p>
+        <a href="aboutus.html"> About us</a> <br>
+        <a href="index.html"> Our company</a><br>
+        <a href="product-categories.html"> Product Categories</a> <br>
+        <a href="support.html"> Technical Support</a> <br>
+      </p>
+    </div>
+
+    <div id="footer-logo-social">
       <!-- Logo -->
-      <img src="../media/header-footer/techonomy-white-bg.png" alt="TECHONOMY logo" width="180">
+      <img id="footer-logo" src="../media/header-footer/techonomy-white-bg.png" alt="TECHONOMY logo">
 
       <br>
 
       <!-- Social Media (they currently lead to the main page of each social media) -->
-      <button id="twitter-button-image" onclick=" window.open('http://twitter.com','_blank')">
-        <img src="../media/header-footer/twitter.png" alt="Twitter icon created by Bogdan Rosu - Flaticon">
-      </button>
+      <div id="footer-social">
+        <button id="twitter-button-image" onclick=" window.open('http://twitter.com','_blank')" aria-label="Twitter icon created by Bogdan Rosu - Flaticon">
+        </button>
 
-      <button id="instagram-button-image" onclick=" window.open('http://instagram.com','_blank')">
-        <img src="../media/header-footer/instagram.png" alt="Instagram icon created by Hight Quality Icons - Flaticon">
-      </button>
+        <button id="instagram-button-image" onclick=" window.open('http://instagram.com','_blank')" aria-label="Instagram icon created by Hight Quality Icons - Flaticon">
+        </button>
 
-      <button id="facebook-button-image" onclick=" window.open('http://facebook.com','_blank')">
-        <img src="../media/header-footer/facebook.png" alt="facebook icon created by Freepik - Flaticon">
-      </button>
+        <button id="facebook-button-image" onclick=" window.open('http://facebook.com','_blank')" aria-label="Facebook icon created by Freepik - Flaticon">
+        </button>
 
-      <button id="youtube-button-image" onclick=" window.open('http://youtube.com','_blank')">
-        <img src="../media/header-footer/youtube.png" alt="Youtube icon created by Freepik - Flaticon ">
-      </button>
+        <button id="youtube-button-image" onclick=" window.open('http://youtube.com','_blank')" aria-label="Youtube icon created by Freepik - Flaticon">
+        </button>
+      </div>
 
-      <br>
+    </div>
 
-      <!-- Slogan -->
-      <img src="../media/header-footer/slogan-white-bg.png" alt="TECHONOMY slogan" width="300">
-    <td>
-  </tr>
-</table>
-</footer>
+    <p>
+      <span id="footer-txt-contact">Contact us:</span>
+      <a href="tel:+6987654321"> 6987654321</a>
+    </p>
+
+    <!-- Slogan -->
+    <img src="../media/header-footer/slogan.png" id="slogan" alt="TECHONOMY slogan" width="300">
+  </footer>
 
 </body>
+
 </html>
