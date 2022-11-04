@@ -8,89 +8,110 @@
 
 <body>
 
-  <!-- ========================== HEADER ========================== -->
-  <header>
-        <!-- Menu -->
-        <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
-        <!-- Logo -->
-        <button id="home-button-image" onclick="window.location.href='index.html';">
-        </button>
-        <!-- Search -->
-        <div class="search-bar">
-          <input type="search" id="search-query" name="q" placeholder="Search...">
-          <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
-        </div>
-        <!-- Shopping Cart -->
-        <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
-        </button>
-        <!-- User Login -->
-        <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
-        </button>
+<!-- ========================== HEADER ========================== -->
+<header>
+      <!-- Menu -->
+      <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
+      <!-- Logo -->
+      <button id="home-button-image" onclick="window.location.href='index.html';">
+      </button>
+      <!-- Search -->
+      <div class="search-bar">
+        <input type="search" id="search-query" name="q" placeholder="Search...">
+        <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
+      </div>
+      <!-- Shopping Cart -->
+      <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
+      </button>
+      <!-- User Login -->
+      <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
+      </button>
 
 
-  </header>
+</header>
 
-  <!-- ========================== Main ========================== -->
+<!-- ========================== Main ========================== -->
 
-    <h1>Techonomy </h1>
-    <h2>where technology meets economy</h2>
+<main id="index-page-components">
 
-<figure>
+  <div id="company-imgs">
+    <img src="../media/header-footer/techonomy-white-bg.png" alt="TECHONOMY logo">
+    <img src="../media/header-footer/slogan.png" alt="TECHONOMY slogan">
+  </div>
+
+  <figure id="techonomy-descr">
     <img src="../media/indexpage/aboutcomp.png"
-    alt="A photo that shows our company. We see two warehouses and several employees working to serve our customers using clarks and tracks. " >
-<figcaption>
-  <blockquote>Are you searching to buy technology items ? Are you frustrated with all this shop that sells technology like its gold ?</blockquote>
-   <strong> We can help you!</strong>Techonomy is hear <strong> for you!</strong>
-    We are a brand new e-shop where you can find everything you are looking for about technology!
-     From computing and mobiles to home entertainment stuff. We encourage you to browse in our website to find your future device
-</figcaption>
-</figure>
+      alt="A photo that shows our company. We see two warehouses and several employees working to serve our customers using clarks and tracks." >
+    <figcaption>
+      <p>
+        Are you searching to buy technology items ? Are you frustrated with all
+        this shop that sells technology like its gold?
+      </p>
+      <p>
+        <strong> We can help you!</strong> Techonomy is here <strong> for you!</strong> <br>
+        We are a brand new e-shop where you can find everything you are looking for about technology!
+      </p>
+      <p>
+        From computing and mobiles to home entertainment stuff. We encourage
+        you to browse in our website to find your future device.
+      </p>
+    </figcaption>
+  </figure>
 
-<b>Our clients can speak for us : </b>
+  <div id="techonomy-reviews">
+    <div class="full-width-stripe">
+      <h2>Our clients can speak for us :</h2>
+    </div>
 
-<table>
-    <tr>
-        <td>
-          <img src="../media/indexpage/fmlclient.jpg"
-            alt="A profile picture that shows our customer Maria"
-            title="Maria">
-        </td>
-        <td>
-            <blockquote><b>I love Techonomy! </b> I have bought many things from this company. Everything was in a great quality and economy. </blockquote>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <blockquote> Techonomy is the <strong>best</strong> company!When my previus phone died they helped to find my new device. Amazing phone amazing people and all this for the best price! </blockquote>
-        </td>
-        <td>
-          <img src="../media/indexpage/mlclient.jpg"
-          alt="A profile picture that shows our customer Alex"
-          title="Alex">
-        </td>
-    </tr>
-</table>
+    <ul id="review-list">
+      <li>
+        <img src="../media/indexpage/strawberry-frog.png"
+          alt="A profile picture that shows our customer Strawberry Frog"
+          title="Strawberry Frog">
+        <div class="review-txt">
+          <p>Strawberry Frog</p>
+          <blockquote>
+            <b>I love Techonomy!</b> I have bought many things from this company. Everything was in a great quality and economy.
+          </blockquote>
+        </div>
+      </li>
 
+      <li>
+        <img src="../media/indexpage/dark-spirit.png"
+          alt="A profile picture that shows our customer Dark Spirit"
+          title="Dark Spirit">
+        <div class="review-txt">
+          <p>Dark Spirit</p>
+          <blockquote>
+            Techonomy is the <strong>best</strong> company! When my previous phone died they helped to find my new device. Amazing phone amazing people and all this for the best price!
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-Top picks for 2022
-<table>
-  <tr>
-        <td>
-          <a href="aboutTv.html" target="_blank">
-          <img src="../media/indexpage/tv.png"
-            alt="A  picture that shows Samsung Smart TV 55 inches Click to see more about this product "
-            title="Samsung Smart TV 55 inches Click to see the product" >
-          </a>
-        </td>
-        <td>
-          <a href="aboutlaptop.html" target="_blank">
-          <img src="../media/indexpage/laptop.png"
-            alt="A  picture that shows the laptop HP 255 G8 15.6 inches Click to see more about this product "
-            title="HP 255 G8 15.6inches Click to see the product" >
-          </a>
-        </td>
-    </tr>
-</table>
+  <div id="techonomy-top-picks">
+    <div class="full-width-stripe">
+      <h2>Top picks for 2022 :</h2>
+    </div>
+
+    <div id="top-picks-items">
+      <a href="aboutTv.html" target="_blank">
+        <img src="../media/indexpage/tv.png"
+          alt="A picture that shows Samsung Smart TV 55 inches. Click to see more about this product "
+          title="Samsung Smart TV 55 inches Click to see the product" >
+      </a>
+
+      <a href="aboutlaptop.html" target="_blank">
+        <img src="../media/indexpage/laptop.png"
+          alt="A picture that shows the laptop HP 255 G8 15.6 inches. Click to see more about this product "
+          title="HP 255 G8 15.6inches Click to see the product" >
+      </a>
+    </div>
+  </div>
+
+</main>
+
 <!-- ========================== FOOTER ========================== -->
 <footer>
     <div id="footer-company-info">
