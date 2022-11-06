@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  /* Allows a smooth animated "scroll effect" between elements within the scrolling box. */
+}
+
 /* ########## HEADER ########## */
 header{
   background-color: #ffff99;
@@ -480,6 +485,14 @@ a.tel{
 a.tel:hover {
   color:maroon;
 }
+
+h1{
+  font-size: 35px;
+  color: #c50707;
+  text-align: center;
+  /* todo cookie regular font family */
+}
+
 /* ################################### */
 
 /* About us names */
@@ -490,34 +503,44 @@ abbr.bios{
 }
 h2.bios{
   background-color: #ffffaa;
-  margin-left: -208px;
-  margin-right: -208px;
+  margin-left: -8px;
+  margin-right: -8px;
   padding:15px 25px 5px 220px;
   color: #301f0e;
   font-weight: lighter;
   font-size: 25px;
 }
 
-
-
 img.gif{
-  float: right;
+  float:left;
   margin-left: 10px;
   width: 25px;
   margin-top: -4px;
-  width: 20%;
+  width: 10%;
 }
 #gif2{
-    float:left;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 
 img.bios{
   float:right;
-  margin-top: 90px;
   width: 300px;
   height:300px;
   border-radius: 20%;
+  margin: auto 300px;
+  margin-top:  180px;
+  border: 8px solid  #ffff99;
+}
+
+#anapephoto{
+  margin-top:  90px;
+}
+
+img.lbadges{
+  float:right;
+  margin-left: 10px;
+  width: 80px;
+  height:30px;
 }
 
 ul.bios{
@@ -538,17 +561,10 @@ li.catTitle{
 }
 
 hr.bios{
-  position:block;
   background-color: #fff;
   border-top: 2px dotted  #ffffaa;
 }
-img.lbadges{
-  float:right;
-  position:inline;
-  margin-left: 10px;
-  width: 80px;
-  height:30px;
-}
+
 
 
 
