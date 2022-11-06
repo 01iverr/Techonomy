@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset ="utf-8">
+  <meta charset="utf-8">
   <title> TechSupport </title>
 </head>
 
@@ -9,126 +10,77 @@
 
   <!-- ========================== HEADER ========================== -->
   <header>
-        <!-- Menu -->
-        <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
-        <!-- Logo -->
-        <button id="home-button-image" onclick="window.location.href='index.html';">
-        </button>
-        <!-- Search -->
-        <div>
-          <input type="search" id="search-query" name="q" placeholder="Search...">
-          <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
-        </div>
-        <!-- Shopping Cart -->
-        <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
-        </button>
-        <!-- User Login -->
-        <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
-        </button>
+    <!-- Menu -->
+    <button id="menu-button-image" aria-label="Menu button including a hamburger menu icon created by Freepik - Flaticon"></button>
+    <!-- Logo -->
+    <button id="home-button-image" onclick="window.location.href='index.html';">
+    </button>
+    <!-- Search -->
+    <div>
+      <input type="search" id="search-query" name="q" placeholder="Search...">
+      <button id="search-button-image" aria-label="Search button including a magnifying glass icon created by Freepik - Flaticon"></button>
+    </div>
+    <!-- Shopping Cart -->
+    <button id="cart-button-image" aria-label="Cart button inclusind a shopping cart icon created by Freepik - Flaticon">
+    </button>
+    <!-- User Login -->
+    <button id="login-button-image" aria-label="Login button including a login icon created by Sebastian Belalcazar - Flaticon">
+    </button>
 
 
   </header>
 
   <!-- ========================== Main ========================== -->
 
-    <h1> Contact us for Technical Support!  </h1>
 
-<form action="/sendData" method="POST">
-<table>
-    <tr>
-        <td>
-          <label for ="txtName">
-          Name*:
-          </label>
-        </td>
-        <td>
-             <input type="text"  id="txtName"  name="firstName" required minlength="3" maxlength="10"> <br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtSurname">
-          Surname*:
-          </label>
-        </td>
-        <td>
-             <input type="text"   id="txtSurname" name="surName" required minlength="3" maxlength="10" ><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtEmail">
-          E-mail*:
-          </label>
-        </td>
-        <td>
-             <input type="email" id="txtEmail" name="email" required minlength="3" maxlength="10"  ><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtPhone">
-          Phone:
-          </label>
-        </td>
-        <td>
-             <input type="tel"  id="txtPhone" name="phone"  minlength="3" maxlength="10"> <br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtBarcode">
-          Barcode:
-          </label>
-        </td>
-        <td>
-             <input type="tel"  id="txtBarcode" name="barcode" minlength="3" maxlength="10" ><br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtPurchase">
-      Purchase Date:
-          </label>
-        </td>
-        <td>
-            <input type="date"  id="txtPurchase" name="purchase" > <br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="txtComments">
-          Problem*:
-          </label>
-        </td>
-        <td>
-          <textarea id ="txtComments" name="comments" rows="10" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <label for ="Receipt">
-          Receipt*:
-          </label>
-        </td>
-        <td>
-            <input id="Receipt"  accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required  >
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <input type="reset" value="Clear all"><br >
-        </td>
-        <td>
-          <input type="submit" value="Submit my application"><br >
-        </td>
-    </tr>
-</table>
-</form>
-Please notice that you have to fullfil the areas with the star (*)
+  <h1> Contact us! </h1>
 
-<!-- ========================== FOOTER ========================== -->
-<footer>
+  <img id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
+
+  <form action="/sendData" method="POST">
+    <label for="txtName">
+      Name*:
+    </label>
+    <input type="text" id="txtName" name="firstName" required minlength="3" maxlength="15"> <br>
+    <label for="txtSurname">
+      Surname*:
+    </label>
+    <input type="text" id="txtSurname" name="surName" required minlength="3" maxlength="15"><br>
+    <label for="txtEmail">
+      E-mail*:
+    </label>
+    <input type="email" id="txtEmail" name="email" required minlength="12"><br>
+    <label for="txtPhone">
+      Phone:
+    </label>
+    <input type="tel" id="txtPhone" name="phone" minlength="3" maxlength="10"> <br>
+    <label for="txtBarcode">
+      Barcode:
+    </label>
+    <input type="tel" id="txtBarcode" name="barcode" minlength="10" maxlength="10"><br>
+    <label for="txtPurchase">
+      Purchase:
+    </label>
+    <input type="date" id="txtPurchase" name="purchase"> <br>
+    <label id="problemtext" for="txtComments">
+      Problem*:
+    </label>
+    <textarea id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
+    <label for="Receipt">
+      Receipt*:
+    </label>
+    <input id="Receipt" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required> <br>
+
+    <input type="reset" value="Clear all">
+    <input type="submit" id="submitt" value="Submit"><br>
+  </form>
+
+  <p id="importantmess">Please have in mind that you have to fullfill all the areas with star (*)
+  </p>
+
+
+  <!-- ========================== FOOTER ========================== -->
+  <footer>
     <div id="footer-company-info">
       <p>
         <a href="aboutus.html"> About us</a> <br>
@@ -146,24 +98,16 @@ Please notice that you have to fullfil the areas with the star (*)
 
       <!-- Social Media (they currently lead to the main page of each social media) -->
       <div id="footer-social">
-        <button id="twitter-button-image"
-          onclick=" window.open('http://twitter.com','_blank')"
-          aria-label="Twitter icon created by Bogdan Rosu - Flaticon">
+        <button id="twitter-button-image" onclick=" window.open('http://twitter.com','_blank')" aria-label="Twitter icon created by Bogdan Rosu - Flaticon">
         </button>
 
-        <button id="instagram-button-image"
-          onclick=" window.open('http://instagram.com','_blank')"
-          aria-label="Instagram icon created by Hight Quality Icons - Flaticon">
+        <button id="instagram-button-image" onclick=" window.open('http://instagram.com','_blank')" aria-label="Instagram icon created by Hight Quality Icons - Flaticon">
         </button>
 
-        <button id="facebook-button-image"
-          onclick=" window.open('http://facebook.com','_blank')"
-          aria-label="Facebook icon created by Freepik - Flaticon">
+        <button id="facebook-button-image" onclick=" window.open('http://facebook.com','_blank')" aria-label="Facebook icon created by Freepik - Flaticon">
         </button>
 
-        <button id="youtube-button-image"
-          onclick=" window.open('http://youtube.com','_blank')"
-          aria-label="Youtube icon created by Freepik - Flaticon">
+        <button id="youtube-button-image" onclick=" window.open('http://youtube.com','_blank')" aria-label="Youtube icon created by Freepik - Flaticon">
         </button>
       </div>
 
@@ -171,12 +115,13 @@ Please notice that you have to fullfil the areas with the star (*)
 
     <p>
       <span id="footer-txt-contact">Contact us:</span>
-      <a href="tel:+6987654321" > 6987654321</a>
+      <a href="tel:+6987654321"> 6987654321</a>
     </p>
 
     <!-- Slogan -->
     <img src="../media/header-footer/slogan.png" id="slogan" alt="TECHONOMY slogan" width="300">
-</footer>
+  </footer>
 
 </body>
+
 </html>

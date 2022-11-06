@@ -82,6 +82,7 @@ h1::before{
   outline: none;
 }
 
+
 #cart-button-image{
   display: inline-block;
   background-image: url("../media/header-footer/shopping-cart.png");
@@ -123,7 +124,6 @@ p.footerletters{
   display: inline-block;
   text-align: center;
 }
-
 
 /* FOOTER LOGO SOCIAL */
 #footer-logo-social {
@@ -427,7 +427,7 @@ div.reviewer > p {
 
 #product-categories-title {
   margin-left: 100px;
-  color: #301f0e;
+  /* color: #301f0e; */
 }
 
 .product-categories-list {
@@ -486,16 +486,20 @@ a.tel:hover {
   color:maroon;
 }
 
+@font-face {
+font-family: "CookieRegular";
+src: url("../fonts/Cookie-Regular.ttf");}
+
 h1{
-  font-size: 35px;
+  font-size: 40px;
   color: #c50707;
   text-align: center;
-  /* todo cookie regular font family */
+  font-family: CookieRegular;
 }
 
 /* ################################### */
 
-/* About us names */
+/* About us*/
 abbr.bios{
   text-decoration:inherit;
   font-family: sans-serif;
@@ -564,9 +568,99 @@ hr.bios{
   background-color: #fff;
   border-top: 2px dotted  #ffffaa;
 }
+/* ################################### */
+/* ########## support.html ########## */
 
+form.support{
+  border: 9px solid  #ffff99;
+  background-color:#ffff99;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 15px 10px #888888;
+  text-align: left;
+  display: block;
+  width: 360px;
+  height: 400px;
+  position: relative;
+  left: 38%;
+}
 
+#importantmess{
+  text-align: right;
+  font-style:italic;
+}
+input.support {
+  font-family: sans-serif;
+  font-weight: lighter;
+  box-sizing: border-box;
+  border: 8px;
+  border-color: blue;
+  border-radius: 6px;
 
+}
+input.support:focus {
+  border: 2px solid #00cccc;
+  outline: none;
+  }
+
+textarea.support{
+  border: 0px hidden;
+  display: inline-block;
+  width: 330px;
+  height: 35px;
+  border-radius: 4px;
+  transform: translateX(3px);
+  text-align: center;
+  resize:none;
+}
+
+textarea.support:focus {
+  border:1px solid #00cccc;
+  outline: none;
+}
+
+label {
+	cursor: pointer;
+	display:inline-block;
+	margin: 7px;
+  width: 120px;
+  text-align:center;
+}
+
+#Telephoneimg{
+  text-align: justify;
+  margin-top: 60px;
+  width: auto;
+  position: fixed;
+}
+
+input.buttonsressub{
+  background: transparent;
+  border: none;
+  color: Darkred;
+  font-family:serif;
+  font-style:oblique;
+  font-size: 18px;
+  cursor: pointer;
+  display:inline-block;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+#Receipt{
+  background-color: #ffff99;
+  color:#ffff99;
+  width:120px;
+  margin-left: 25px;
+}
+#submitt{
+  margin-right:0px;
+  color:green;
+}
+
+#txtPurchase{
+  width:163px;
+}
+/* ########## end of support.html ########## */
 
 /* ################################### */
 button {
