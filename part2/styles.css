@@ -19,15 +19,51 @@ h1::before {
   white-space: pre;
 }
 
-#menu-button-image {
+#menu-button-image{
   display: inline-block;
   background-image: url("../media/header-footer/menu-button-of-three-horizontal-lines.png");
+  background-origin: content-box;
   position: absolute;
   top: 10px;
   left: 6px;
-  width: 25px;
-  height: 25px;
+  padding: 8px 12px 17px 12px;
+  width: 46px;
+  height: 40px;
 }
+/* ----- Dropdown Menu ----- */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.dropdown-menu {
+  display: none; /* menu not appear on page load */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  background-color: #ffffaa;
+  min-width: 160px;
+  z-index: 1;
+}
+ul.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ul.dropdown-menu a:hover {
+  background-color: #ffe999; /* color menu cell on hover */
+}
+nav.dropdown:hover > ul.dropdown-menu, /* make main menu appear on hover */
+nav.dropdown li:hover > ul.dropdown-menu /* make submenu appear on hover */ {
+  display: block;
+}
+/* ------------------------- */
 
 #home-button-image {
   display: inline-block;
@@ -277,7 +313,7 @@ p.footerletters {
   font-size: 20px;
 }
 
-nav {
+.superclass-categories {
   font-size: 14px;
   font-weight: bold;
   display: inline-block;
