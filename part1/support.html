@@ -32,52 +32,52 @@
 
   <!-- ========================== Main ========================== -->
 
+  <main>
+    <h1> Contact us! </h1>
 
-  <h1> Contact us! </h1>
+    <img id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
 
-  <img id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
+    <form action="/sendData" method="POST">
+      <label for="txtName">
+        Name*:
+      </label>
+      <input type="text" id="txtName" name="firstName" required minlength="3" maxlength="15"> <br>
+      <label for="txtSurname">
+        Surname*:
+      </label>
+      <input type="text" id="txtSurname" name="surName" required minlength="3" maxlength="15"><br>
+      <label for="txtEmail">
+        E-mail*:
+      </label>
+      <input type="email" id="txtEmail" name="email" required minlength="12"><br>
+      <label for="txtPhone">
+        Phone:
+      </label>
+      <input type="tel" id="txtPhone" name="phone" minlength="3" maxlength="10"> <br>
+      <label for="txtBarcode">
+        Barcode:
+      </label>
+      <input type="tel" id="txtBarcode" name="barcode" minlength="10" maxlength="10"><br>
+      <label for="txtPurchase">
+        Purchase:
+      </label>
+      <input type="date" id="txtPurchase" name="purchase"> <br>
+      <label id="problemtext" for="txtComments">
+        Problem*:
+      </label>
+      <textarea id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
+      <label for="Receipt">
+        Receipt*:
+      </label>
+      <input id="Receipt" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required> <br>
 
-  <form action="/sendData" method="POST">
-    <label for="txtName">
-      Name*:
-    </label>
-    <input type="text" id="txtName" name="firstName" required minlength="3" maxlength="15"> <br>
-    <label for="txtSurname">
-      Surname*:
-    </label>
-    <input type="text" id="txtSurname" name="surName" required minlength="3" maxlength="15"><br>
-    <label for="txtEmail">
-      E-mail*:
-    </label>
-    <input type="email" id="txtEmail" name="email" required minlength="12"><br>
-    <label for="txtPhone">
-      Phone:
-    </label>
-    <input type="tel" id="txtPhone" name="phone" minlength="3" maxlength="10"> <br>
-    <label for="txtBarcode">
-      Barcode:
-    </label>
-    <input type="tel" id="txtBarcode" name="barcode" minlength="10" maxlength="10"><br>
-    <label for="txtPurchase">
-      Purchase:
-    </label>
-    <input type="date" id="txtPurchase" name="purchase"> <br>
-    <label id="problemtext" for="txtComments">
-      Problem*:
-    </label>
-    <textarea id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
-    <label for="Receipt">
-      Receipt*:
-    </label>
-    <input id="Receipt" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required> <br>
+      <input type="reset" value="Clear all">
+      <input type="submit" id="submitt" value="Submit"><br>
+    </form>
 
-    <input type="reset" value="Clear all">
-    <input type="submit" id="submitt" value="Submit"><br>
-  </form>
-
-  <p id="importantmess">Please have in mind that you have to fullfill all the areas with star (*)
-  </p>
-
+    <p id="importantmess">Please have in mind that you have to fullfill all the areas with star (*)
+    </p>
+  </main>
 
   <!-- ========================== FOOTER ========================== -->
   <footer>
