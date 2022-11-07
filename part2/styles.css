@@ -282,21 +282,7 @@ p.footerletters {
 }
 
 /* top picks */
-#techonomy-top-picks {
-  margin-top: 60px;
-}
 
-#top-picks-items {
-  text-align: center;
-}
-
-#top-picks-items>img {
-  width: 400px;
-}
-
-#top-picks-items>a:first-child {
-  margin-right: 100px;
-}
 
 /* ########## aboutProduct ########## */
 /* ################################## */
@@ -738,7 +724,7 @@ input.buttonsressub {
 }
 
 /* ########## end of support.html ########## */
-/* category_laptops */
+/* categories */
 figure.categories {
   width: 40%;
   text-align: center;
@@ -814,7 +800,6 @@ button.morebutton {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* ################################### */
 button {
