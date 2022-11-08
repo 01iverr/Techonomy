@@ -230,7 +230,7 @@ p.footerletters {
   margin: 80px 150px 50px 150px;
 }
 
-#techonomy-reviews > div.full-width-stripe {
+#index-page-components > #reviews > div.full-width-stripe {
   background-color: #ffffaa;
   margin-left: -150px;
   margin-right: -150px;
@@ -270,29 +270,29 @@ p.footerletters {
 }
 
 /* techonomy reviews */
-#techonomy-reviews {
+#index-page-components > #reviews {
   clear: both;
   margin-top: 60px;
 }
 
-#techonomy-reviews>#review-list {
+#index-page-components > #reviews > ul { /* reviews list */
   margin: 30px 150px 0px 150px;
 }
 
-#techonomy-reviews>#review-list li {
+#index-page-components > #reviews > ul li { /* individual review items */
   display: flex;
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#techonomy-reviews>#review-list li>img {
+#index-page-components > #reviews > ul li > img { /* reviewer image */
   float: left;
   width: 80px;
   margin-right: 20px;
 }
 
-#techonomy-reviews>#review-list li>div.review-txt>p {
+#index-page-components > #reviews > ul li > div.review-txt > p { /* reviewer name */
   font-weight: bold;
   font-size: 18px;
 }
@@ -383,7 +383,7 @@ p.footerletters {
 }
 
 /* description */
-#product-page-descr {
+#product-page-components > #description {
   clear: both;
 }
 
@@ -413,7 +413,7 @@ img.descr-img-left {
 }
 
 /* manufacturer */
-#product-page-manufacturer {
+#product-page-components > #manufacturer {
   margin-top: 60px;
 }
 
@@ -422,7 +422,7 @@ img.descr-img-left {
 }
 
 /* features */
-#product-page-features {
+#product-page-components > #features {
   margin-top: 60px;
 }
 
@@ -459,7 +459,7 @@ table.product-features td {
 }
 
 /* reviews */
-#product-page-reviews {
+#product-page-components > #reviews {
   margin-top: 60px;
 }
 
@@ -500,17 +500,17 @@ div.reviewer>p {
   margin: 80px 300px 0px 200px;
 }
 
-#product-categories-title {
+#product-categories-page-components h1 {
   margin-left: 100px;
   /* color: #301f0e; */
 }
 
-.product-categories-list {
+#product-categories-page-components ul {
   list-style-type: none;
   padding-left: 100px;
 }
 
-.product-categories-button {
+#product-categories-page-components button {
   width: 100%;
   padding: 10px;
   background: #ffffaa;
@@ -522,7 +522,7 @@ div.reviewer>p {
   color: #5c3814;
 }
 
-.product-categories-icon {
+#product-categories-page-components img {
   float: left;
   margin: -3px 25px 0px 5px;
   width: 25px;
