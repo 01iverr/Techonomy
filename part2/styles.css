@@ -12,6 +12,7 @@ header {
   top: 0px;
   left: 0px;
   position: fixed;
+  z-index: 1;
 }
 
 h1::before {
@@ -35,9 +36,10 @@ h1::before {
   position: relative;
 }
 .dropdown-submenu .dropdown-menu {
-  top: 0;
+  top: 1px;
   left: 100%;
   margin-top: -1px;
+  border-radius: 10px;
 }
 .dropdown-menu {
   display: none; /* menu not appear on page load */
@@ -46,15 +48,20 @@ h1::before {
   margin: 0;
   position: absolute;
   top: 50px;
-  background-color: #ffffaa;
+  background-color: #fcdb7e;
   min-width: 160px;
   z-index: 1;
+  border-radius: 10px;
 }
 ul.dropdown-menu a {
   color: black;
+  text-align: center;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border-radius: 10px;
+  border: solid #fcdb7e 2px;
+  background-color: #ffff99;
 }
 ul.dropdown-menu a:hover {
   background-color: #ffe999; /* color menu cell on hover */
@@ -220,7 +227,16 @@ p.footerletters {
 /* ########## index ########## */
 /* ########################### */
 #index-page-components {
-  margin: 80px 150px 0px 150px;
+  margin: 80px 150px 50px 150px;
+}
+
+#techonomy-reviews > div.full-width-stripe {
+  background-color: #ffffaa;
+  margin-left: -150px;
+  margin-right: -150px;
+  padding: 10px 0px 10px 180px;
+  color: #301f0e;
+  font-size: 20px;
 }
 
 #company-imgs {
@@ -281,9 +297,6 @@ p.footerletters {
   font-size: 18px;
 }
 
-/* top picks */
-
-
 /* ########## aboutProduct ########## */
 /* ################################## */
 #product-page-components {
@@ -321,8 +334,14 @@ p.footerletters {
   -webkit-transform: rotate(-45deg);
 }
 
+#product-page-components > h1 {
+  margin-top: -10px;
+  text-align: right;
+}
+
 #product-page-star-rating {
   font-size: 22px;
+  text-align: right;
 }
 
 /* small description */
