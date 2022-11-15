@@ -78,7 +78,7 @@
   <main>
     <h1> Contact us! </h1>
 
-    <img id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
+    <img class="formimage" id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
 
     <form class="support" action="/sendData" method="POST">
       <label for="txtName">
@@ -104,7 +104,7 @@
       <label for="txtPurchase">
         Purchase:
       </label>
-      <input class="support" type="date" id="txtPurchase" name="purchase"> <br>
+      <input class="support dateinp" type="date" id="txtPurchase" name="purchase"> <br>
       <label id="problemtext" for="txtComments">
         Problem*:
       </label>
@@ -112,13 +112,13 @@
       <label for="Receipt">
         Receipt*:
       </label>
-      <input id="Receipt" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required> <br>
+      <input class="uploadfile" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="receipt" type="file" required> <br>
 
       <input class="buttonsressub" type="reset" value="Clear all">
-      <input class="buttonsressub" type="submit" id="submitt" value="Submit"><br>
+      <input class="buttonsressub submitt" type="submit"  value="Submit"><br>
     </form>
 
-    <p id="importantmess">Please have in mind that you have to fullfill all the areas with star (*)
+    <p class="importantmess">Please have in mind that you have to fullfill all the areas with star (*)
     </p>
   </main>
   <!-- ========================== FOOTER ========================== -->

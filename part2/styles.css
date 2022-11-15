@@ -20,7 +20,7 @@ h1::before {
   white-space: pre;
 }
 
-#menu-button-image{
+#menu-button-image {
   display: inline-block;
   background-image: url("../media/header-footer/menu-button-of-three-horizontal-lines.png");
   background-origin: content-box;
@@ -31,18 +31,22 @@ h1::before {
   width: 46px;
   height: 40px;
 }
+
 /* ----- Dropdown Menu ----- */
 .dropdown-submenu {
   position: relative;
 }
+
 .dropdown-submenu .dropdown-menu {
   top: 1px;
   left: 100%;
   margin-top: -1px;
   border-radius: 10px;
 }
+
 .dropdown-menu {
-  display: none; /* menu not appear on page load */
+  display: none;
+  /* menu not appear on page load */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -53,6 +57,7 @@ h1::before {
   z-index: 1;
   border-radius: 10px;
 }
+
 ul.dropdown-menu a {
   color: black;
   text-align: center;
@@ -63,15 +68,22 @@ ul.dropdown-menu a {
   border: solid #fcdb7e 2px;
   background-color: #ffff99;
 }
+
 ul.dropdown-menu a:hover {
-  background-color: #ffe999; /* color menu cell on hover */
+  background-color: #ffe999;
+  /* color menu cell on hover */
 }
-nav.dropdown:hover > ul.dropdown-menu, /* make main menu appear on hover */
-nav.dropdown li:hover > ul.dropdown-menu /* make submenu appear on hover */ {
+
+nav.dropdown:hover>ul.dropdown-menu,
+/* make main menu appear on hover */
+nav.dropdown li:hover>ul.dropdown-menu
+
+/* make submenu appear on hover */
+  {
   display: block;
 }
-/* ------------------------- */
 
+/* ------------------------- */
 #home-button-image {
   display: inline-block;
   position: fixed;
@@ -230,7 +242,7 @@ p.footerletters {
   margin: 80px 150px 50px 150px;
 }
 
-#index-page-components > #reviews > div.full-width-stripe {
+#index-page-components>#reviews>div.full-width-stripe {
   background-color: #ffffaa;
   margin-left: -150px;
   margin-right: -150px;
@@ -270,29 +282,33 @@ p.footerletters {
 }
 
 /* techonomy reviews */
-#index-page-components > #reviews {
+#index-page-components>#reviews {
   clear: both;
   margin-top: 60px;
 }
 
-#index-page-components > #reviews > ul { /* reviews list */
+#index-page-components>#reviews>ul {
+  /* reviews list */
   margin: 30px 150px 0px 150px;
 }
 
-#index-page-components > #reviews > ul li { /* individual review items */
+#index-page-components>#reviews>ul li {
+  /* individual review items */
   display: flex;
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-#index-page-components > #reviews > ul li > img { /* reviewer image */
+#index-page-components>#reviews>ul li>img {
+  /* reviewer image */
   float: left;
   width: 80px;
   margin-right: 20px;
 }
 
-#index-page-components > #reviews > ul li > div.review-txt > p { /* reviewer name */
+#index-page-components>#reviews>ul li>div.review-txt>p {
+  /* reviewer name */
   font-weight: bold;
   font-size: 18px;
 }
@@ -334,7 +350,7 @@ p.footerletters {
   -webkit-transform: rotate(-45deg);
 }
 
-#product-page-components > h1 {
+#product-page-components>h1 {
   margin-top: -10px;
   text-align: right;
 }
@@ -383,7 +399,7 @@ p.footerletters {
 }
 
 /* description */
-#product-page-components > #description {
+#product-page-components>#description {
   clear: both;
 }
 
@@ -413,7 +429,7 @@ img.descr-img-left {
 }
 
 /* manufacturer */
-#product-page-components > #manufacturer {
+#product-page-components>#manufacturer {
   margin-top: 60px;
 }
 
@@ -422,7 +438,7 @@ img.descr-img-left {
 }
 
 /* features */
-#product-page-components > #features {
+#product-page-components>#features {
   margin-top: 60px;
 }
 
@@ -459,7 +475,7 @@ table.product-features td {
 }
 
 /* reviews */
-#product-page-components > #reviews {
+#product-page-components>#reviews {
   margin-top: 60px;
 }
 
@@ -648,7 +664,7 @@ hr.bios {
 }
 
 /* ################################### */
-/* ########## support.html ########## */
+/* ########## forms########## */
 form.support {
   border: 9px solid #ffff99;
   background-color: #ffff99;
@@ -663,7 +679,7 @@ form.support {
   left: 38%;
 }
 
-#importantmess {
+p.importantmess {
   text-align: right;
   font-style: italic;
 }
@@ -706,7 +722,7 @@ label {
   text-align: center;
 }
 
-#Telephoneimg {
+img.formimage {
   text-align: justify;
   margin-top: 60px;
   width: auto;
@@ -726,23 +742,91 @@ input.buttonsressub {
   margin-left: 60px;
 }
 
-#Receipt {
+input.uploadfile {
   background-color: #ffff99;
   color: #ffff99;
   width: 120px;
   margin-left: 25px;
 }
 
-#submitt {
+input.submitt {
   margin-right: 0px;
   color: green;
 }
 
-#txtPurchase {
+input.dateinp {
   width: 163px;
 }
 
-/* ########## end of support.html ########## */
+/*-- only for signup page*/
+#formsignup {
+  height: 90%;
+  width: 80%;
+  left: 20%;
+}
+
+#handimg {
+  float: left;
+  width: 20%;
+}
+
+fieldset.support {
+  display: block;
+  border: none;
+}
+
+ul.support {
+  list-style-type: none;
+  text-align: left;
+}
+
+legend.support {
+  text-align: left;
+  margin-top: 5px;
+}
+
+legend.radiochoices {
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+label.radiochoices {
+  display: block;
+  float: left;
+  clear: right;
+  text-align: left;
+  margin-left: -10px;
+}
+
+label.knowyoubetterpart {
+  display: inline-block;
+}
+
+input.knowyoubetterpart {}
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: lightgreen;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+select {
+  border: none;
+  border-radius: 2px;
+  background-color: #ffff99;
+  width: auto;
+  margin-left: -30px;
+}
+
+/* ########## end of forms pages########## */
 /* categories */
 figure.categories {
   width: 40%;
