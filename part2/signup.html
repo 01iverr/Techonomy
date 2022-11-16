@@ -105,29 +105,29 @@
 
     <img class="formimage" id="handimg" src="../media/signup/pen.png" alt="an image of a hand that holds a pen">
 
-    <form class="support" id="formsignup" action="/sendData" method="POST">
+    <form name="signupform" class="support" id="formsignup" action="/sendData" method="POST">
       <fieldset class="support">
         <legend class="support">Personal Informations:</legend>
         <label for="txtNameSU">
           Name*:
         </label>
-        <input class="support" autocomplete="on" type="text" id="txtNameSU" name="firstName" required minlength="3" maxlength="20" placeholder="Dimitris" pattern="[A-Za-z]"> <br>
+        <input class="support" autocomplete="on" type="text" id="txtNameSU" name="firstName" required placeholder="Dimitris" pattern="[A-Za-z]{3,20}"> <br>
         <label for="txtSurnameSU">
           Surname*:
         </label>
-        <input class="support" type="text" id="txtSurnameSU" name="surName" required minlength="3" maxlength="20" placeholder="Dimitrakopoulos" pattern="[A-Za-z]"><br>
+        <input class="support" type="text" id="txtSurnameSU" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z]{3,20}"><br>
         <label for="txtEmailSU">
           E-mail*:
         </label>
-        <input class="support" type="email" id="txtEmailSU" name="emailSu" minlength="11" placeholder="dimitrakopoulos@yahoo.gr"><br>
+        <input class="support" type="email" id="txtEmailSU" name="emailSu" required minlength="11" placeholder="dimitrakopoulos@yahoo.gr"><br>
         <label for="txtCity">
           City*:
         </label>
-        <input class="support" list="cities" type="text" id="txtCity" name="txtCitySU" minlength="3" required pattern="[A-Za-z]" placeholder="Peraeus"> <br>
+        <input class="support" list="cities" type="text" id="txtCity" name="txtCitySU" required pattern="[A-Za-z]{3,30}" placeholder="Peraeus"> <br>
         <label for="txtStNameSU">
           St.Name:
         </label>
-        <input class="support" type="text" id="txtStNameSU" name="txtStNameSU" minlength="3" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" placeholder="Alikarnisou"> <br>
+        <input class="support" type="text" id="txtStNameSU" name="txtStNameSU" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*${3,30}" placeholder="Alikarnisou"> <br>
         <label for="txtStNumSU">
           St.Num:
         </label>
@@ -139,7 +139,7 @@
         <label for="txtCountry">
           Country:
         </label>
-        <input class="support" list="countries" type="text" id="txtCountry" name="txtCountrySU" minlength="3" pattern="[A-Za-z]" placeholder="Greece"> <br>
+        <input class="support" list="countries" type="text" id="txtCountry" name="txtCountrySU" pattern="[A-Za-z]{3,30}" placeholder="Greece"> <br>
         <label for="txtPhoneSU">
           Phone*:
         </label>
@@ -195,7 +195,7 @@
         <label for="ShippingCity">
           City*:
         </label>
-        <input class="support" list="cities" type="text" id="ShippingCity" name="ShippingCitySU" minlength="3" pattern="[A-Za-z]" required placeholder="Peraeus"> <br>
+        <input class="support" list="cities" type="text" id="ShippingCity" name="ShippingCitySU" pattern="[A-Za-z]{3,30}" required placeholder="Peraeus"> <br>
         <label for="ShippingStNum">
           St.Num*:
         </label>
@@ -207,7 +207,7 @@
         <label for="ShippingCountry">
           Country*:
         </label>
-        <input list="countries" class="support" type="text" id="ShippingCountry" name="ShippingCountrySU" pattern="[A-Za-z]" placeholder="Greece" required minlength="3" maxlength="15"> <br>
+        <input list="countries" class="support" type="text" id="ShippingCountry" name="ShippingCountrySU" pattern="[A-Za-z]{3,30}" placeholder="Greece" required minlength="3" maxlength="15"> <br>
       </fieldset>
 
 
@@ -217,17 +217,17 @@
           <!-- letters (upper or lowercase) and/or numbers (0-9) and /or underscore (_) and /or dash (-) -->
           Username*:
         </label>
-        <input class="support" type="text" id="Username" name="Username" required minlength="3" maxlength="15" pattern="^[a-zA-Z0-9_-]*$" placeholder="user2001"> <br>
-        <label for="Password">
+        <input class="support" type="text" id="Username" name="Username" required pattern="^[a-zA-Z0-9_-]*${3,15}" placeholder="user2001"> <br>
+        <label for="Password1">
           Password*:
         </label>
-        <input class="support" type="password" id="Password" name="Password" autocomplete="current-password" required minlength="6" maxlength="20" pattern="^[a-zA-Z0-9_]*$" placeholder="topsecret123"> <br>
+        <input class="support" type="password" id="Password1" name="Password" autocomplete="current-password" required pattern="^[a-zA-Z0-9_]*${6,20}" placeholder="topsecret123" onblur="checkPassword()"> <br>
         <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
         i have to add js also  https://www.csestack.org/hide-show-password-eye-icon-html-javascript/-->
         <label for="PasswordVer">
           Password*:
         </label>
-        <input class="support" type="password" id="PasswordVer" name="PasswordVer" autocomplete="current-password" required minlength="6" maxlength="20" pattern="^[a-zA-Z0-9_]*$" placeholder="topsecret123"> <br>
+        <input class="support " type="password" id="PasswordVer" name="PasswordVeri" autocomplete="current-password" required pattern="^[a-zA-Z0-9_]*${6,20}" placeholder="topsecret123" onblur="checkPassword()"> <br>
       </fieldset>
 
 

@@ -692,7 +692,6 @@ input.support {
   border-color: blue;
   border-radius: 6px;
 }
-
 input.support:focus {
   border: 2px solid #00cccc;
   outline: none;
@@ -825,6 +824,8 @@ select {
   width: auto;
   margin-left: -30px;
 }
+
+
 
 /* ########## end of forms pages########## */
 /* categories */

@@ -669,7 +669,7 @@ hr.bios {
 }
 
 /* ################################### */
-/* ########## support.html ########## */
+/* ########## forms########## */
 form.support {
   border: 9px solid #ffff99;
   background-color: #ffff99;
@@ -684,7 +684,7 @@ form.support {
   left: 38%;
 }
 
-#importantmess {
+p.importantmess {
   text-align: right;
   font-style: italic;
 }
@@ -727,7 +727,7 @@ label {
   text-align: center;
 }
 
-#Telephoneimg {
+img.formimage {
   text-align: justify;
   margin-top: 60px;
   width: auto;
@@ -747,23 +747,23 @@ input.buttonsressub {
   margin-left: 60px;
 }
 
-#Receipt {
+input.uploadfile {
   background-color: #ffff99;
   color: #ffff99;
   width: 120px;
   margin-left: 25px;
 }
 
-#submitt {
+input.submitt {
   margin-right: 0px;
   color: green;
 }
 
-#txtPurchase {
+input.dateinp {
   width: 163px;
 }
 
-/* ########## end of support.html ########## */
+/* ########## end of forms ########## */
 /* categories */
 figure.categories {
   text-align: center;
