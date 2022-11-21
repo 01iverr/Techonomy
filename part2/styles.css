@@ -557,17 +557,21 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: darkslategrey;
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
   color: green;
+  text-decoration: underline;
 }
 
-/* selected link */
 a:active {
-  color: darkslategrey;
+  color: #00FF7F;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 a.tel {
@@ -685,13 +689,13 @@ p.importantmess {
   font-style: italic;
 }
 
-input.support {
-  font-family: sans-serif;
+input.support  ,#Receipt:invalid{
+  font-family: "EkMukta";
   font-weight: lighter;
   box-sizing: border-box;
   border: 8px;
-  border-color: blue;
   border-radius: 6px;
+  margin-left:-50px;
 }
 input.support:focus {
   border: 2px solid #00cccc;
@@ -715,10 +719,10 @@ textarea.support:focus {
 }
 
 label {
-  cursor: pointer;
   display: inline-block;
   margin: 7px;
   width: 120px;
+  margin-left:30px;
   text-align: center;
 }
 
@@ -743,10 +747,8 @@ input.buttonsressub {
 }
 
 input.uploadfile {
-  background-color: #ffff99;
-  color: #ffff99;
-  width: 120px;
-  margin-left: 25px;
+  width:200px;
+  margin-left: -50px;
 }
 
 input.submitt {
@@ -755,77 +757,42 @@ input.submitt {
 }
 
 input.dateinp {
-  width: 163px;
+  width: 157px;
+}
+/*--to add extras*/
+
+input.support:not(:focus):not(:placeholder-shown):invalid {
+  background-color: #ffdddd;
+  border: 2px solid #cc0000;
 }
 
-/*-- only for signup page*/
-#formsignup {
-  height: 90%;
-  width: 80%;
-  left: 20%;
+
+input.support:not(:placeholder-shown):valid {
+  background-color: #98FB98;
+  border: 2px solid #00FF7F;
 }
 
-#handimg {
-  float: left;
-  width: 20%;
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("../fonts/LibreBaskerville-Regular.ttf");
 }
 
-fieldset.support {
-  display: block;
-  border: none;
+@font-face {
+  font-family: "Aileron";
+  src: url("../fonts/Aileron-Regular.otf");
 }
 
-ul.support {
-  list-style-type: none;
-  text-align: left;
+@font-face {
+  font-family: "EkMukta";
+  src: url("../fonts/EkMukta-Regular.ttf");
 }
 
-legend.support {
-  text-align: left;
-  margin-top: 5px;
-}
-
-legend.radiochoices {
-  margin-top: 100px;
-  margin-bottom: -100px;
-}
-
-label.radiochoices {
-  display: block;
-  float: left;
-  clear: right;
-  text-align: left;
-  margin-left: -10px;
-}
-
-label.knowyoubetterpart {
+label{
+  font-family: "Aileron";
+  font-size: 13px;
   display: inline-block;
+  text-align: left;
 }
-
-input.knowyoubetterpart {}
-
-input[type='radio']:checked:after {
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: lightgreen;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white;
-}
-
-select {
-  border: none;
-  border-radius: 2px;
-  background-color: #ffff99;
-  width: auto;
-  margin-left: -30px;
-}
-
 
 
 /* ########## end of forms pages########## */

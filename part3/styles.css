@@ -562,19 +562,23 @@ a:link {
   text-decoration: none;
 }
 
-/* visited link */
+//* visited link */
 a:visited {
-  color: darkslategrey;
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
   color: green;
+  text-decoration: underline;
 }
 
-/* selected link */
 a:active {
-  color: darkslategrey;
+  color: #00FF7F;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 a.tel {
@@ -690,13 +694,13 @@ p.importantmess {
   font-style: italic;
 }
 
-input.support {
-  font-family: sans-serif;
+input.support,#Receipt:invalid{
+  font-family: "EkMukta";
   font-weight: lighter;
   box-sizing: border-box;
   border: 8px;
-  border-color: blue;
   border-radius: 6px;
+  margin-left:-50px;
 }
 
 input.support:focus {
@@ -721,10 +725,10 @@ textarea.support:focus {
 }
 
 label {
-  cursor: pointer;
   display: inline-block;
   margin: 7px;
   width: 120px;
+  margin-left:30px;
   text-align: center;
 }
 
@@ -749,10 +753,8 @@ input.buttonsressub {
 }
 
 input.uploadfile {
-  background-color: #ffff99;
-  color: #ffff99;
-  width: 120px;
-  margin-left: 25px;
+  width:200px;
+  margin-left: -50px;
 }
 
 input.submitt {
@@ -761,8 +763,43 @@ input.submitt {
 }
 
 input.dateinp {
-  width: 163px;
+  width: 157px;
 }
+
+
+input.support:not(:focus):not(:placeholder-shown):invalid {
+  background-color: #ffdddd;
+  border: 2px solid #cc0000;
+}
+
+
+input.support:not(:placeholder-shown):valid {
+  background-color: #98FB98;
+  border: 2px solid #00FF7F;
+}
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("../fonts/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("../fonts/Aileron-Regular.otf");
+}
+
+@font-face {
+  font-family: "EkMukta";
+  src: url("../fonts/EkMukta-Regular.ttf");
+}
+
+label{
+  font-family: "Aileron";
+  font-size: 13px;
+  display: inline-block;
+  text-align: left;
+}
+
 
 /* ########## end of forms ########## */
 /* categories */

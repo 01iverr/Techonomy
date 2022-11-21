@@ -85,31 +85,40 @@
       <label for="txtName">
         Name*:
       </label>
-      <input type="text" id="txtName" name="firstName" requiredplaceholder="Dimitris" pattern="[A-Za-z]{3,20}"> <br>
+      <input type="text" id="txtName" name="firstName" required placeholder="Dimitris"
+      pattern="[A-Za-z ]{3,20}"
+      title="Please write your name (or names with using space between of them) here.Its required field">
+      <br>
       <label for="txtSurname">
         Surname*:
       </label>
-      <input type="text" id="txtSurname" name="surName" requiredplaceholder="Dimitrakopoulos" pattern="[A-Za-z]{3,20}"><br>
+      <input type="text" id="txtSurname" name="surName"
+      required placeholder="Dimitrakopoulos"
+      pattern="[A-Za-z ]{3,20}"
+      title="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
       <label for="txtEmail">
         E-mail*:
       </label>
-      <input type="email" id="txtEmail" name="email" required minlength="11" placeholder="techonomy@yahoo.gr"><br>
+      <input type="email" id="txtEmail" name="email"
+      required minlength="11" placeholder="techonomy@yahoo.gr"
+      title="Please write your email here.Its required field"><br>
       <label for="txtPhone">
         Phone*:
       </label>
-      <input type="tel" id="txtPhone" name="phone" pattern="[0-9]{10}" placeholder="6900000000" required> <br>
+      <input type="tel" id="txtPhone" name="phone" pattern="[0-9]{10}" placeholder="6900000000" required   title="Please write your 10 digit number phone here without country code.Its required field"> <br>
       <label for="txtBarcode">
         Barcode:
       </label>
-      <input type="tel" id="txtBarcode" name="barcode" pattern="[0-9]{9}"><br>
+      <input type="tel" id="txtBarcode" name="barcode" pattern="[0-9]{9}" placeholder="045786135" title="Please write the barcode of the product.">><br>
       <label for="txtPurchase">
-        Purchase:
+        Purchase*:
       </label>
-      <input type="date" id="txtPurchase" name="purchase" min="2012-01-01" max="2023-02-02"> <br>
+      <input type="date" id="txtPurchase" name="purchase"
+      required min="2012-01-01" max="2023-02-02"> <br>
       <label id="problemtext" for="txtComments">
         Problem*:
       </label>
-      <textarea id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
+      <textarea id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..." title="Please describe the problem that you noticed about the product"></textarea> <br>
       <label for="Receipt">
         Receipt*:
       </label>

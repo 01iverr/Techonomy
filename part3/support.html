@@ -90,31 +90,46 @@
         <label for="txtName">
           Name*:
         </label>
-        <input class="support" type="text" id="txtName" name="firstName" required placeholder="Dimitris" pattern="[A-Za-z]{3,20}"> <br>
+        <input class="support" type="text" id="txtName"
+        name="firstName" required
+        placeholder="Dimitris"
+        pattern="[A-Za-z ]{3,20}"
+        title="Please write your name (or names with using space between of them) here.Its required field"> <br>
         <label for="txtSurname">
           Surname*:
         </label>
-        <input class="support" type="text" id="txtSurname" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z]{3,20}"><br>
+        <input class="support" type="text" id="txtSurname" name="surName" required placeholder="Dimitrakopoulos"
+        pattern="[A-Za-z ]{3,20}"
+        title="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
         <label for="txtEmail">
           E-mail*:
         </label>
-        <input class="support" type="email" id="txtEmail" name="email" required minlength="11" placeholder="techonomy@yahoo.gr"><br>
+        <input class="support" type="email" id="txtEmail" name="email" required minlength="11"
+        placeholder="techonomy@yahoo.gr"
+        title="Please write your email here.Its required field"><br>
         <label for="txtPhone">
           Phone*:
         </label>
-        <input class="support" type="tel" id="txtPhone" name="phone"  pattern="[0-9]{10}" placeholder="6900000000" required> <br>
+        <input class="support" type="tel" id="txtPhone" name="phone"  pattern="[0-9]{10}" placeholder="6900000000" required   title="Please write your 10 digit number phone here without country code.Its required field"> <br>
         <label for="txtBarcode">
           Barcode:
         </label>
-        <input class="support" type="text" id="txtBarcode" name="barcode" pattern="[0-9]{9}"><br>
+        <input class="support" type="tel" id="txtBarcode"
+        title="Please write the barcode of the product."
+        name="barcode" placeholder="045786135" pattern="[0-9]{9}"><br>
         <label for="txtPurchase">
-          Purchase:
+          Purchase*:
         </label>
-        <input class="support dateinp" type="date" id="txtPurchase" name="purchase" min="2012-01-01" max="2023-02-02"> <br>
+        <input class="support dateinp" type="date" id="txtPurchase"
+        name="purchase" min="2012-01-01" max="2023-02-02"
+        required> <br>
         <label id="problemtext" for="txtComments">
           Problem*:
         </label>
-        <textarea class="support" id="txtComments" name="comments" rows="9" cols="40" required placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
+        <textarea class="support" id="txtComments" name="comments" rows="9"
+          cols="40" required
+          title="Please describe the problem that you noticed about the product"
+          placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
         <label for="Receipt">
           Receipt*:
         </label>
