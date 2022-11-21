@@ -374,9 +374,10 @@ p.footerletters {
   margin-right: 20px;
 }
 
-#product-page-small-info {
+#product-page-small-descr {
   overflow: hidden;
-  margin-top: 80px;
+  margin-top: 50px;
+  padding-top: 50px;
 }
 
 #product-page-price {
@@ -419,14 +420,14 @@ p.footerletters {
   font-size: 20px;
 }
 
-img.descr-img-right {
-  width: 400px;
+div.descr-item > img {
+  min-width: 250px;
+}
+div.descr-item:nth-child(odd) > img {
   float: right;
   margin-left: 20px;
 }
-
-img.descr-img-left {
-  width: 400px;
+div.descr-item:nth-child(even) > img {
   float: left;
   margin-right: 20px;
 }
