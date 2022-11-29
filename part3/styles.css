@@ -625,7 +625,7 @@ img.gif {
   width: 10%;
 }
 
-#gif2 {
+img.gif:not(:first-of-type) {
   margin-top: -80px;
 }
 
@@ -639,7 +639,7 @@ img.bios {
   border: 8px solid #ffff99;
 }
 
-#anapephoto {
+img.bios:not(:first-of-type) {
   margin-top: 90px;
 }
 
@@ -808,6 +808,7 @@ figure.categories {
   text-indent: 0;
   border: 8px solid #ffff99;
   box-shadow: 15px 10px #ffff99;
+  margin: 0;
 }
 
 figure.categories img {
@@ -818,6 +819,11 @@ figure.categories img {
 figcaption.categories {
   margin-top: -40px;
   padding: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
 }
 
 @font-face {
@@ -832,7 +838,6 @@ span.price::before {
 
 span.price {
   font-family: "Lusgathi";
-  text-align: left;
   font-size: 24px;
 }
 
@@ -842,7 +847,6 @@ span.price {
 }
 
 small.code {
-  text-align: right;
   font-family: "Volumno";
   padding-top: 30px;
 }
@@ -868,21 +872,20 @@ ul.categories {
   list-style-type: "\1F892";
   display: inline-block;
   text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0;
 }
 
 button.morebutton {
-  display: block;
   text-align: center;
   font-size: 38px;
   color: #c50707;
   font-family: CookieRegular;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 main.category-page {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 0px 30px 50px 30px;
   align-items: center;
 }
 
@@ -890,17 +893,19 @@ main.category-page {
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px 110px;
 }
-ul.wrap-categories {
+ul.wrap-categories { /* list with product characteristics */
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr;
+  gap: 0px 10px;
 }
 div.wrap-price-code {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 2fr;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

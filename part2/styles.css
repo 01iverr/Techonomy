@@ -620,7 +620,7 @@ img.gif {
   width: 10%;
 }
 
-#gif2 {
+img.gif:not(:first-of-type) {
   margin-top: -80px;
 }
 
@@ -634,7 +634,7 @@ img.bios {
   border: 8px solid #ffff99;
 }
 
-#anapephoto {
+img.bios:not(:first-of-type) {
   margin-top: 90px;
 }
 
