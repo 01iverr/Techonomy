@@ -299,11 +299,11 @@ main {
   }
 
   /* -------- About Product -------- */
-  div.descr-item:nth-child(odd) img {
+  article.descr-item:nth-child(odd) img {
     float: right;
     margin-left: 20px;
   }
-  div.descr-item:nth-child(even) img {
+  article.descr-item:nth-child(even) img {
     float: left;
     margin-right: 20px;
   }
@@ -322,11 +322,11 @@ main {
   }
 
   /* -------- About Product -------- */
-  div.descr-item {
+  article.descr-item {
     text-align: center;
     margin-top: 50px;
   }
-  div.descr-item img {
+  article.descr-item img {
     float: none;
     margin: auto;
   }
@@ -469,7 +469,7 @@ main {
     text-align: center;
     left:8%;
     border: 0.2em solid #fff980;
-    border-radius: 10%;
+    border-radius: 20px;
   }
   input.support{
     left:50%;
@@ -849,7 +849,7 @@ p.footerletters {
   font-size: 20px;
 }
 
-div.descr-item > img {
+article.descr-item > img {
   min-width: 250px;
 }
 

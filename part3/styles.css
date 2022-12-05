@@ -420,14 +420,14 @@ p.footerletters {
   font-size: 20px;
 }
 
-div.descr-item > img {
+article.descr-item > img {
   width: 350px;
 }
-div.descr-item:nth-child(odd) > img {
+article.descr-item:nth-child(odd) > img {
   float: right;
   margin-left: 20px;
 }
-div.descr-item:nth-child(even) > img {
+article.descr-item:nth-child(even) > img {
   float: left;
   margin-right: 20px;
 }
