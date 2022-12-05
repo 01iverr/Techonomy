@@ -108,263 +108,286 @@
 
       <h1> Sign up! </h1>
       <img class="formimage" id="handimg" src="../media/signup/pen.png" alt="an image of a hand that holds a pen">
-
       <form name="signupform" class="support" id="formsignup" action="/sendData" method="POST">
-        <fieldset class="support">
-          <legend class="support">Personal Informations:</legend>
-          <label for="txtNameSU">
-            Name*:
-          </label>
-          <input class="support" autocomplete="on" type="text" id="txtNameSU" name="firstNameSu" required placeholder="Dimitris" pattern="[A-Za-z ]{3,20}"
-            title="Please write your name (or names with using space between of them) here.Its required field" aria-label="Please write your name (or names with using space between of them) here.Its required field">
-          <br>
-          <label for="txtSurnameSU">
-            Surname*:
-          </label>
-          <input class="support" type="text" id="txtSurnameSU" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z ]{3,20}" title="Please write your surname (or surnames with using space between of them) here.Its required field"
-            aria-label="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
-          <label for="txtEmailSU">
-            E-mail*:
-          </label>
-          <input class="support" type="email" id="txtEmailSU" name="emailSu" required minlength="11" placeholder="techonomy@yahoo.gr" title="Please write your email here.Its required field"
-            aria-label="Please write your email here.Its required field">
-          <br>
-          <label for="txtCity">
-            City*:
-          </label>
-          <input class="support" list="cities" type="text" id="txtCity" name="txtCitySU" required pattern="[A-Za-z ]{3,30}" placeholder="Peraeus" title="Please write your City here.Its required field"
-            aria-label="Please write your City here.Its required field"> <br>
-          <label for="txtStNameSU">
-            St.Name:
-          </label>
-          <input class="support" type="text" id="txtStNameSU" name="txtStNameSU" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*${3,30}" placeholder="Alikarnisou" title="Please write your Street name here.Its not required field"
-            aria-label="Please write your Street name here.Its not required field"> <br>
-          <label for="txtStNumSU">
-            St.Num:
-          </label>
-          <input class="support" type="number" step="1" min="0" id="txtStNumSU" name="txtStNumSU" placeholder="96" title="Please write your Street number here.Its not required field"
-            aria-label="Please write your Street number here.Its not required field"> <br>
-          <label for="Postcodeinput">
-            Postcode:
-          </label>
-          <input class="support" type="number" step="1" min="0" id="Postcodeinput" name="Postcodeinput" placeholder="19999" title="Please write your Postcode here.Its not required field"
-            aria-label="Please write your Postcode here.Its not required field"> <br>
-          <label for="txtCountry">
-            Country:
-          </label>
-          <input class="support" list="countries" type="text" id="txtCountry" name="txtCountrySU" pattern="[A-Za-z ]{3,30}" placeholder="Greece" title="Please write your Country here.Its not required field"
-            aria-label="Please write your Country here.Its not required field"> <br>
-          <label for="txtPhoneSU">
-            Phone*:
-          </label>
-          <input class="support" type="tel" id="txtPhoneSU" name="phoneSU" pattern="[0-9]{10}" placeholder="6900000000" required title="Please write your 10 digit number phone here without country code.Its required field"
-            aria-label="Please write your 10 digit number phone here without country code.Its required field"> <br>
-          <label for="Birth_date">
-            Birth*:
-          </label>
-          <input class="support dateinp" type="date" id="Birth_date" name="Birth_dateSU" required value="" onfocus="(this.type='date')" min="1920-01-01" max="2006-12-31" title="Please let us know when ur birth date/year is.Its required field"
-            aria-label="Please let us know when ur birth date/year is.Its required field" onblur="checkage()"> <br>
-          <label for="ID">
-            ID*:
-          </label>
-          <input id="ID" class="uploadfile" onchange="FileSizeValidation()" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="id" type="file" onblur="sizeValidation()" required
-            title="Please share with us your id.Its required field" aria-label="Please share with us your id.Its required field"> <br>
-        </fieldset>
-
-
-        <fieldset class="support">
-          <legend class="radiochoices support">Payment method*:</legend>
-          <ul class="support ">
-            <li>
-              <label class="radiochoices" for="Cash">
-                <input type="radio" id="Cash" name="paymentmethod" value="CashOnDelivery" required>
-                Cash
+        <div class="goleftorright">
+          <div class="gl">
+            <fieldset class="support" id="personalinfopart">
+              <legend class="support">Personal Informations:</legend>
+              <label for="txtNameSU">
+                Name*:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="CC">
-                <input type="radio" id="CC" name="paymentmethod" value="CreditCard" required>
-                Credit Card
+              <input class="support" autocomplete="on" type="text" id="txtNameSU" name="firstNameSu" required placeholder="Dimitris" pattern="[A-Za-z ]{3,20}"
+                title="Please write your name (or names with using space between of them) here.Its required field" aria-label="Please write your name (or names with using space between of them) here.Its required field">
+              <br>
+              <label for="txtSurnameSU">
+                Surname*:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="PP">
-                <input type="radio" id="PP" name="paymentmethod" value="Paypal" required>
-                Paypal
+              <input class="support" type="text" id="txtSurnameSU" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z ]{3,20}"
+                title="Please write your surname (or surnames with using space between of them) here.Its required field" aria-label="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
+              <label for="txtEmailSU">
+                E-mail*:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="BT">
-                <input type="radio" id="BT" name="paymentmethod" value="Bank" required>
-                Bank transfer
+              <input class="support" type="email" id="txtEmailSU" name="emailSu" required minlength="11" placeholder="techonomy@yahoo.gr" title="Please write your email here.Its required field"
+                aria-label="Please write your email here.Its required field">
+              <br>
+              <label for="txtCity">
+                City*:
               </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="support">
-          <legend class="support">Shipping details:</legend>
-          <label for="ShippingStName">
-            St.Name*:
-          </label>
-          <input class="support" type="text" id="ShippingStName" name="ShippingStName" required minlength="3" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" placeholder="Kiffisias"
-            title="Street name input! We will deliver your future purchase there"> <br>
-          <label for="ShippingCity">
-            City*:
-          </label>
-          <input class="support" list="cities" type="text" id="ShippingCity" name="ShippingCitySU" pattern="[A-Za-z]{3,30}" required placeholder="Peraeus" title="City input! We will deliver your future purchase there"> <br>
-          <label for="ShippingStNum">
-            St.Num*:
-          </label>
-          <input class="support" type="number" step="1" min="0" id="ShippingStNum" name="ShippingStNum" placeholder="99" required title="Street number input! We will deliver your future purchase there"> <br>
-          <label for="ShippingPostcodeinput">
-            Postcode*:
-          </label>
-          <input class="support" type="number" step="1" min="0" id="ShippingPostcodeinput" placeholder="19876" name="ShippingPostcodeinput" required title="Postcode input! We will deliver your future purchase there"> <br>
-          <label for="ShippingCountry">
-            Country*:
-          </label>
-          <input list="countries" class="support" type="text" id="ShippingCountry" name="ShippingCountrySU" pattern="[A-Za-z ]{3,30}" placeholder="Greece" required minlength="3" maxlength="15"
-            title="Country input! We will deliver your future purchase there"> <br>
-        </fieldset>
-        <fieldset class="support">
-          <legend class="support">User identification informations:</legend>
-          <label for="Username">
-            <!-- letters (upper or lowercase) and/or numbers (0-9) and /or underscore (_) -->
-            Username*:
-          </label>
-          <input class="support" type="text" id="Username" name="Username" required pattern="^[A-Za-z0-9_]{3,15}$" placeholder="user2001" title="Username must contain only letter and underscore minlength 3 characters and max 15"> <br>
-          <label for="Password1">
-            Password*:
-          </label>
-          <input class="support" type="password" id="Password1" name="Password" autocomplete="current-password"
-            title=" Password must contain at least one uppercase and one lowercase letter and one number.The password must contains at least 8 characters and max 12" placeholder="topsecret123" onchange="checkPasswords();" onkeyup="PassValid()"
-            oncopy="return false" onpaste="return false" required>
-          <input type="checkbox" class="showmypass" onclick="makepasswordsVisible(document.getElementById('Password1'))">
-          <br>
-          <label for="PasswordVer">
-            Password*:
-          </label>
-          <input class="support " type="password" id="PasswordVer" name="PasswordVeri" autocomplete="current-password" required placeholder="topsecret123" onchange="checkPasswords()" onreset="checkPasswords()" oncopy="return false"
-            onpaste="return false" title=" Password validator. Write again your chosen password">
-          <input type="checkbox" class="showmypass" onclick="makepasswordsVisible(document.getElementById('PasswordVer'))">
-          <br>
-        </fieldset>
-
-
-        <fieldset class="support">
-          <legend class="support">Communication method preference:</legend>
-          <label for="wayofcommunication">Contact with:</label>
-          <select name="contact" id="wayofcommunication">
-            <option label="SMS" value="sms">SMS</option>
-            <option label="Email" value="email">E-mail</option>
-            <option label="Viber" value="viber">Viber</option>
-            <option label="Watsapp" value="whatsapp">WhatsApp</option>
-            <option label="Viber" value="viber">Viber</option>
-            <option label="None" value="noCommunication">None</option>
-          </select>
-        </fieldset>
-
-
-        <fieldset class="support">
-          <legend class="support">Know you better:</legend>
-
-          <label class="knowyoubetterpart" for="opgender">Gender:</label>
-          <select name="optiongender" id="opgender">
-            <option value="PreferNotToSaygender">N&#47;A</option>
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-            <option value="NonBinary">Non Binary</option>
-            <option value="Other">Other</option>
-          </select>
-
-          <label class="knowyoubetterpart" for="kids">Kids:</label>
-          <select name="optionkids" id="kids">
-            <option value="PreferNotToSaykids">N&#47;A</option>
-            <option value="noKids">0</option>
-            <option value="1kid">1</option>
-            <option value="2kids">2</option>
-            <option value="3kids">3</option>
-            <option value="4pluskids">4+</option>
-          </select>
-
-          <label class="knowyoubetterpart" for="wanttobuy">I want to buy</label>
-          <select name="shoppingfor" id="wanttobuy">
-            <option value="buynotanswer">N&#x2f;A</option>
-            <option value="buylaptop">Laptop</option>
-            <option value="buyheadphones">Headphones</option>
-            <option value="buymousepad">Mousepad</option>
-            <option value="buymobile">Mobile</option>
-            <option value="buytablet">Tablet</option>
-            <option value="buyconsole">Console</option>
-            <option value="buytv">TV</option>
-            <option value="buyother">Other</option>
-          </select>
-
-
-          <label class="knowyoubetterpart" for="paymentpref">Usually pays with</label>
-          <select name="paymentprefmethod" id="paymentpref">
-            <option value="PreferNotToSayayment">N&#47;A</option>
-            <option value="cash">Cash</option>
-            <option value="debitCard">Debit Card</option>
-            <option value="BankTransfer">Bank Transer</option>
-            <option value="CreditCard">Credit Card</option>
-            <option value="PayPal">PayPal</option>
-            <option value="other">Other</option>
-          </select>
-
-          <label class="knowyoubetterpart" for="shoppingtime">Happy hour discount*</label>
-          <input class="knowyoubetterpart" type="time" id="shoppingtime" title="Tell us what time in the day you would like to take our happy hour discount! " name="timeforshopping" min="00:00" max="23:59" required
-            aria-label="Tell us what time in the day you would like to take our happy hour discount! ">
-        </fieldset>
-        <fieldset class="support">
-          <legend class="radiochoices support">Learned about us by*:</legend>
-          <ul class="support ">
-            <li>
-              <label class="radiochoices" for="FB">
-                <input type="radio" id="FB" name="wayoflearnedaboutus" value="Facebook" required>
-                Facebook
+              <input class="support" list="cities" type="text" id="txtCity" name="txtCitySU" required pattern="[A-Za-z ]{3,30}" placeholder="Peraeus" title="Please write your City here.Its required field"
+                aria-label="Please write your City here.Its required field"> <br>
+              <label for="txtStNameSU">
+                St.Name:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="IG">
-                <input type="radio" id="IG" name="wayoflearnedaboutus" value="Instagram" required>
-                Instagram
+              <input class="support" type="text" id="txtStNameSU" name="txtStNameSU" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*${3,30}" placeholder="Alikarnisou" title="Please write your Street name here.Its not required field"
+                aria-label="Please write your Street name here.Its not required field"> <br>
+              <label for="txtStNumSU">
+                St.Num:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="GA">
-                <input type="radio" id="GA" name="wayoflearnedaboutus" value="GoogleAds" required>
-                Google ads
+              <input class="support" type="number" step="1" min="0" id="txtStNumSU" name="txtStNumSU" placeholder="96" title="Please write your Street number here.Its not required field"
+                aria-label="Please write your Street number here.Its not required field"> <br>
+              <label for="Postcodeinput">
+                Postcode:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="BF">
-                <input type="radio" id="BF" name="wayoflearnedaboutus" value="Friend" required>
-                Friend
+              <input class="support" type="number" step="1" min="1000" id="Postcodeinput" name="Postcodeinput" placeholder="19999" title="Please write your Postcode here.Its not required field"
+                aria-label="Please write your Postcode here.Its not required field"> <br>
+              <label for="txtCountry">
+                Country:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="fam">
-                <input type="radio" id="fam" name="wayoflearnedaboutus" value="family" required>
-                Family
+              <input class="support" list="countries" type="text" id="txtCountry" name="txtCountrySU" pattern="[A-Za-z ]{3,30}" placeholder="Greece" title="Please write your Country here.Its not required field"
+                aria-label="Please write your Country here.Its not required field"> <br>
+              <label for="txtPhoneSU">
+                Phone*:
               </label>
-            </li>
-            <li>
-              <label class="radiochoices" for="ot">
-                <input type="radio" id="ot" name="wayoflearnedaboutus" value="other" required>
-                Other
+              <input class="support" type="tel" id="txtPhoneSU" name="phoneSU" pattern="[0-9]{10}" placeholder="6900000000" required title="Please write your 10 digit number phone here without country code.Its required field"
+                aria-label="Please write your 10 digit number phone here without country code.Its required field"> <br>
+              <label for="Birth_date">
+                Birth*:
               </label>
-            </li>
-          </ul>
-        </fieldset>
+              <input class="support dateinp" type="date" id="Birth_date" name="Birth_dateSU" required value="" onfocus="(this.type='date')" min="1920-01-01" max="2006-12-31" title="Please let us know when ur birth date/year is.Its required field"
+                aria-label="Please let us know when ur birth date/year is.Its required field" onblur="checkage()"> <br>
+              <label for="ID">
+                ID*:
+              </label>
+              <input id="ID" class="uploadfile" onchange="FileSizeValidation()" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="id" type="file" onblur="sizeValidation()" required
+                title="Please share with us your id.Its required field" aria-label="Please share with us your id.Its required field"> <br>
+            </fieldset>
 
+            <fieldset class="support" id="shippingdetailspart">
+              <legend class="support">Shipping details:</legend>
+              <label for="ShippingStName">
+                St.Name*:
+              </label>
+              <input class="support" type="text" id="ShippingStName" name="ShippingStName" required minlength="3" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" placeholder="Kiffisias"
+                title="Street name input! We will deliver your future purchase there"> <br>
+              <label for="ShippingCity">
+                City*:
+              </label>
+              <input class="support" list="cities" type="text" id="ShippingCity" name="ShippingCitySU" pattern="[A-Za-z]{3,30}" required placeholder="Peraeus" title="City input! We will deliver your future purchase there"> <br>
+              <label for="ShippingStNum">
+                St.Num*:
+              </label>
+              <input class="support" type="number" step="1" min="0" id="ShippingStNum" name="ShippingStNum" placeholder="99" required title="Street number input! We will deliver your future purchase there"> <br>
+              <label for="ShippingPostcodeinput">
+                Postcode*:
+              </label>
+              <input class="support" type="number" step="1" min="0" id="ShippingPostcodeinput" placeholder="19876" name="ShippingPostcodeinput" required title="Postcode input! We will deliver your future purchase there"> <br>
+              <label for="ShippingCountry">
+                Country*:
+              </label>
+              <input list="countries" class="support" type="text" id="ShippingCountry" name="ShippingCountrySU" pattern="[A-Za-z ]{3,30}" placeholder="Greece" required minlength="3" maxlength="15"
+                title="Country input! We will deliver your future purchase there"> <br>
+            </fieldset>
 
-        <input class="buttonsressub" type="button" onclick="return wannareset();" aria-label="reset the form" value="Clear all">
-        <input class="buttonsressub submitt" type="submit" aria-label="send the form" id="submitSUform" value="Submit"><br>
+            <fieldset class="support" id="paymentmethodpart">
+              <legend class="radiochoices support">Payment method*:</legend>
+              <ul class="support ">
+                <li>
+                  <label class="radiochoices" for="Cash">
+                    <input type="radio" id="Cash" name="paymentmethod" value="CashOnDelivery" required>
+                    Cash
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="CC">
+                    <input type="radio" id="CC" name="paymentmethod" value="CreditCard" required>
+                    Credit Card
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="PP">
+                    <input type="radio" id="PP" name="paymentmethod" value="Paypal" required>
+                    Paypal
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="BT">
+                    <input type="radio" id="BT" name="paymentmethod" value="Bank" required>
+                    Bank transfer
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="Cs">
+                    <input type="radio" id="Cs" name="paymentmethod" value="Checks" required>
+                    Checks
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="Ap">
+                    <input type="radio" id="Ap" name="paymentmethod" value="AutoPay" required>
+                    Autopay
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+          </div>
+          <div class="gri">
+            <fieldset class="support" id="userinfopart">
+              <legend class="support">User identification informations:</legend>
+              <label for="Username">
+                <!-- letters (upper or lowercase) and/or numbers (0-9) and /or underscore (_) -->
+                Username*:
+              </label>
+              <input class="support" type="text" id="Username" name="Username" required pattern="^[A-Za-z0-9_]{3,15}$" placeholder="user2001" title="Username must contain only letter and underscore minlength 3 characters and max 15"> <br>
+              <label for="Password1">
+                Password*:
+              </label>
+              <input class="support" type="password" id="Password1" name="Password" autocomplete="current-password"
+                title=" Password must contain at least one uppercase and one lowercase letter and one number.The password must contains at least 8 characters and max 12" placeholder="topsecret123" onchange="checkPasswords();" onkeyup="PassValid()"
+                oncopy="return false" onpaste="return false" required>
+              <input type="checkbox" class="showmypass" onclick="makepasswordsVisible(document.getElementById('Password1'))">
+              <br>
+              <label for="PasswordVer">
+                Password*:
+              </label>
+              <input class="support " type="password" id="PasswordVer" name="PasswordVeri" autocomplete="current-password" required placeholder="topsecret123" onkeyup="checkPasswords()" oncopy="return false" onpaste="return false"
+                title=" Password validator. Write again your chosen password">
+              <input type="checkbox" class="showmypass" onclick="makepasswordsVisible(document.getElementById('PasswordVer'))">
+              <br>
+            </fieldset>
+            <fieldset class="support" id="communicationinfo">
+              <legend class="support">Communication method preference:</legend>
+              <label for="wayofcommunication">Contact with:</label>
+              <select name="contact" id="wayofcommunication">
+                <option label="SMS" value="sms">SMS</option>
+                <option label="Email" value="email">E-mail</option>
+                <option label="Viber" value="viber">Viber</option>
+                <option label="Watsapp" value="whatsapp">WhatsApp</option>
+                <option label="Viber" value="viber">Viber</option>
+                <option label="None" value="noCommunication">None</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="support" id="knowubetterpart">
+              <legend class="support">Know you better:</legend>
+
+              <label class="knowyoubetterpart" for="opgender">Gender:</label>
+              <select name="optiongender" id="opgender">
+                <option value="PreferNotToSaygender">N&#47;A</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="NonBinary">Non Binary</option>
+                <option value="Other">Other</option>
+              </select>
+              <br>
+              <BR>
+              <label class="knowyoubetterpart" for="kids">Kids 	&nbsp;:</label>
+              <select name="optionkids" id="kids">
+                <option value="PreferNotToSaykids">N&#47;A</option>
+                <option value="noKids">0</option>
+                <option value="1kid">1</option>
+                <option value="2kids">2</option>
+                <option value="3kids">3</option>
+                <option value="4pluskids">4+</option>
+              </select>
+              <br>
+              <BR>
+
+              <label class="knowyoubetterpart" for="wanttobuy">I want:</label>
+              <select name="shoppingfor" id="wanttobuy">
+                <option value="buynotanswer">N&#x2f;A</option>
+                <option value="buylaptop">Laptop</option>
+                <option value="buyheadphones">Headphones</option>
+                <option value="buymousepad">Mousepad</option>
+                <option value="buymobile">Mobile</option>
+                <option value="buytablet">Tablet</option>
+                <option value="buyconsole">Console</option>
+                <option value="buytv">TV</option>
+                <option value="buyother">Other</option>
+              </select>
+
+              <br>
+              <BR>
+              <label class="knowyoubetterpart" for="paymentpref">Usually pays with</label>
+              <select name="paymentprefmethod" id="paymentpref">
+                <option value="PreferNotToSayayment">N&#47;A</option>
+                <option value="cash">Cash</option>
+                <option value="debitCard">Debit Card</option>
+                <option value="BankTransfer">Bank Transer</option>
+                <option value="CreditCard">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Checks">Checks</option>
+                <option value="Autopay">AutoPay</option>
+                <option value="other">Other</option>
+              </select>
+              <br>
+              <BR>
+              <label class="knowyoubetterpart" for="shoppingtime">Favourite hour to start shopping</label>
+              <input class="knowyoubetterpart" type="time" id="shoppingtime" title="Tell us what time in the day you would like to take our happy hour discount! " name="timeforshopping" min="00:00" max="23:59"
+                aria-label="Tel us what time in the day you would like to take our happy hour discount! ">
+            </fieldset>
+            <fieldset class="support" id="learnedaboutusinfo">
+              <legend class="radiochoices support">Learned about us by*:</legend>
+              <ul class="support ">
+                <li>
+                  <label class="radiochoices" for="FB">
+                    <input type="radio" id="FB" name="wayoflearnedaboutus" value="Facebook" required>
+                    Facebook
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="IG">
+                    <input type="radio" id="IG" name="wayoflearnedaboutus" value="Instagram" required>
+                    Instagram
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="GA">
+                    <input type="radio" id="GA" name="wayoflearnedaboutus" value="GoogleAds" required>
+                    Google ads
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="BF">
+                    <input type="radio" id="BF" name="wayoflearnedaboutus" value="Friend" required>
+                    Friend
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="fam">
+                    <input type="radio" id="fam" name="wayoflearnedaboutus" value="family" required>
+                    Family
+                  </label>
+                </li>
+                <li>
+                  <label class="radiochoices" for="ot">
+                    <input type="radio" id="ot" name="wayoflearnedaboutus" value="other" required>
+                    Other
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div  class="twobuttons" id="buttonsresetandsubmit">
+          <input class="buttonsressub" type="button" onclick="return wannareset();" aria-label="reset the form" value="Clear all">
+          <input class="buttonsressub submitt" type="submit" aria-label="send the form" id="submitSUform" value="Submit"><br>
+        </div>
       </form>
 
       <p class="importantmess">Please have in mind that you have to fullfill all the areas with star (*) </p>
+
+
     </main>
 
     <!-- ========================== FOOTER ========================== -->

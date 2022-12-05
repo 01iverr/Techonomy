@@ -20,11 +20,43 @@ main {
 }
 
 /* ########## MEDIA QUERIES ########## */
+
+
 @media screen and (min-width: 1100px) {
   /* ------- Product-Category ------- */
   .wrapper-product-items {
     gap: 3% 4vw;
   }
+
+  /*sign-up form image*/
+  #handimg.formimage {
+    visibility:visible;
+    margin-top: 0px;
+    width: 20vw;
+    left:1vw;
+  }
+
+  #formsignup{
+    width: 80vw;
+    height: 770px;
+  }
+    .goleftorright {
+        height:90%;
+        margin-left: 10vw;
+        flex-direction:row;
+      }
+      .gl {
+        width: 45%;
+      }
+
+      .gri {
+        width: 45%;
+        text-align:left;
+        margin-top: 3vw;
+      }
+    .twobuttons{
+      height:10%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -48,10 +80,41 @@ main {
     text-align: left;
   }
 
+
   /* ------- Product-Category ------- */
   .wrapper-product-items {
     gap: 3% 3vw;
   }
+
+  /*sign-up form image*/
+  #handimg.formimage {
+    visibility: hidden;
+    margin-top: 0px;
+    width: 0%;
+  }
+
+  /*sign up page*/
+  #formsignup{
+    width: 90vw;
+    height: 770px;
+  }
+    .goleftorright {
+        height:90%;
+        margin-left: 10vw;
+        flex-direction:row;
+      }
+      .gl {
+        width: 48%;
+      }
+
+      .gri {
+        width: 48%;
+        text-align:left;
+        margin-top: 3vw;
+      }
+    .twobuttons{
+      height:10%;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -62,6 +125,32 @@ main {
   div.search-bar {
     width: calc(34vw + 75px);
   }
+
+}
+
+
+@media screen and (min-width:800px) and (max-width:1100px){
+  #formsignup{
+    width: 90vw;
+    height: 770px;
+  }
+    .goleftorright {
+        height:90%;
+        margin-left: 0vw;
+        flex-direction:row;
+      }
+      .gl {
+        width: 50%;
+      }
+
+      .gri {
+        width: 50%;
+        text-align:left;
+        margin-top: 3vw;
+      }
+    .twobuttons{
+      height:10%;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -125,6 +214,7 @@ main {
     margin-top: 60px;
     width: auto;
   }
+
 }
 
 /* Tablet */
@@ -281,6 +371,28 @@ main {
     width: 0px;
     height:0px;
   }
+
+  /* ---------- signup ---------- */
+  #formsignup{
+    width: 90vw;
+    height: 1310px;
+  }
+    .goleftorright {
+        height:97%;
+        margin-left: 0vw;
+        flex-direction:column;
+      }
+      .gl {
+        width: 100%;
+      }
+      .gri {
+        width: 100%;
+        text-align:center;
+        margin-top: 3vw;
+      }
+    .twobuttons{
+      height:3%;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -389,6 +501,7 @@ main {
   label {
     font-size: 13px;
     text-align: left;
+
   }
   textarea.support{
     height: 35px;
@@ -400,6 +513,7 @@ main {
   input.buttonsressub {
     margin-left: 60px;
   }
+
 }
 
 /* Smartphone */
@@ -483,6 +597,43 @@ main {
     height: 50px;
   }
 
+  /* ---------- signup ---------- */
+  #formsignup{
+    width: 90vw;
+    height: 2140px;
+  }
+    .goleftorright {
+        height:97%;
+        margin-left: 0vw;
+        flex-direction:column;
+      }
+      .gl {
+        /* height: 120vh; */
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .gri {
+        width: 70%;
+        text-align:center;
+        margin-top: 3vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .twobuttons{
+      height:3%;
+    }
+
+    /*know you better label at sign up page*/
+    label.knowyoubetterpart {
+      margin-left: -15vw;
+      }
+}
+
+@media screen and (max-width: 337px) {
+  label.knowyoubetterpart {
+    margin-left: -20vw;
+    }
 }
 
 /* ########## HEADER ########## */
@@ -537,7 +688,7 @@ h1::before {
 
 #search-button-image {
   position: relative;
-  background-image: url("../media/header-footer/magnifying-glass.png");
+  background-image: url("../media/header-/magnifying-glass.png");
   top: -8px;
   width: 20px;
   height: 20px;
@@ -1093,7 +1244,7 @@ p.importantmess {
   font-style: italic;
 }
 
-input.support ,#Receipt:invalid, #txtPurchase:invalid{
+input.support ,#Receipt:invalid, #txtPurchase:invalid , #Birth_date:invalid{
   font-family: "EkMukta";
   font-weight: lighter;
   box-sizing: border-box;
@@ -1109,7 +1260,6 @@ input.support:focus {
 textarea.support {
   border: 0px hidden;
   display: inline-block;
-  /* height: 35px; */
   border-radius: 4px;
   transform: translateX(3px);
   text-align: center;
@@ -1130,14 +1280,14 @@ label {
   width: 120px;
   margin-left:30px;
   cursor:pointer;
-  /* text-align: center; */
-  /* text-align: left; */
 }
 
 /*force placeholder appear in center*/
 ::placeholder {
    text-align: center;
 }
+
+/*//////////////////////////*/
 
 img.formimage {
   text-align: justify;
@@ -1198,6 +1348,111 @@ input.support:not(:placeholder-shown):valid {
   src: url("../fonts/EkMukta-Regular.ttf");
 }
 
+/*  for signup page // */
+
+#handimg {
+  transform: rotate(-45deg);
+  margin-left: -10vw;
+}
+
+fieldset.support {
+  display: block;
+  border: none;
+}
+
+ul.support {
+  list-style-type: none;
+  text-align: left;
+}
+
+legend.support {
+  display: block;
+  text-align: left;
+  font-family: "LibreBaskerville";
+  font-size: 15px;
+  color:#081f37;
+}
+
+label.radiochoices {
+  display: block;
+  float: left;
+  clear: right;
+  text-align: left;
+  margin-left: -10px;
+  margin-top: auto;
+}
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: lightgreen;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='checkbox'].showmypass {
+  -webkit-appearance: none;
+  display: inline-block;
+  position: absolute;
+  height:40px;
+  width:40px;
+  background-image: url("../media/signup/closeeye.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+input[type='checkbox'].showmypass:checked {
+  background-image: url("../media/signup/openeye.png");
+}
+
+input[type='checkbox'].showmypass:hover {
+  cursor:pointer;
+}
+
+select {
+  border: none;
+  border-radius: 2px;
+  background-color: #ffff99;
+  width: 100px;
+  text-align: center;
+}
+
+label.knowyoubetterpart {
+  display: inline-block;
+  width:120px;
+  text-align: right;
+  cursor :default;
+}
+
+#formsignup {
+    display: flex;
+    flex-direction:column;
+    left:auto;
+    margin-left:auto;
+    margin-right: auto;
+    }
+
+    .goleftorright {
+    			display: flex;
+    		}
+
+    		.gl {
+    			text-align: center;
+    		}
+
+    		.gri {
+    		}
+      .twobuttons{
+        text-align:center;
+      }
+
+
 /* ########## end of forms ########## */
 /* categories */
 figure.categories {
@@ -1231,12 +1486,12 @@ span.price {
 }
 
 @font-face {
-  font-family: "Volunmo";
-  src: url("../fonts/volunmo.ttf");
+  font-family: "Volumno";
+  src: url("../fonts/volumno.ttf");
 }
 
 small.code {
-  font-family: "Volunmo";
+  font-family: "Volumno";
   font-size: 18px;
 }
 

@@ -4,21 +4,17 @@ function checkPasswords() {
   var password2 = document.forms["formsignup"]["PasswordVer"];
   if (password2.value) { //  password2 isn't null or undefined or empty
     if (password1.value == password2.value) {
-      password1.style.border = "2px solid #00FF7F";
-      password2.style.border = "2px solid #00FF7F";
-      password2.setCustomValidity("");
       if (!PassValid()) {
-        password1.style.border = "2px solid #cc0000";
-        password2.style.border = "2px solid #cc0000";
-        //set pass2 not valid!
         PassValid();
+        password2.setCustomValidity("Incorrect password"); // we dont want to make this message visible!
+          return;
       }
     } else {
-      password1.style.border = "2px solid #cc0000";
-      password2.style.border = "2px solid #cc0000";
       password2.setCustomValidity("Passwords do not match!");
       password2.reportValidity();
+      return;
     }
+    password2.setCustomValidity("");
   }
 }
 ///////////////////////////////////////////////////////////////////////////
@@ -90,7 +86,8 @@ function FileSizeValidation() {
 function wannareset() {
   if (confirm('You will erase all the data that you fullfilled earlier')) {
     // Reset it!
-    window.location.reload();
+    // window.location.reload();
+    document.getElementById("formsignup").reset();
     console.log('User decided to reset the form');
   } else {
     // Do nothing!

@@ -414,7 +414,7 @@ p.footerletters {
 }
 
 div.descr-item > img {
-  min-width: 250px;
+  width: 350px;
 }
 div.descr-item:nth-child(odd) > img {
   float: right;
@@ -671,17 +671,18 @@ hr.bios {
 /* ################################### */
 /* ########## forms########## */
 form.support {
-  border: 9px solid #ffff99;
-  background-color: #ffff99;
-  box-sizing: border-box;
+  width: 350px;
+  height: 340px;
+  left: 50%;
+  margin-left: -175px;
   border-radius: 8px;
   box-shadow: 15px 10px #888888;
   text-align: left;
+  border: 9px solid #ffff99;
+  background-color: #ffff99;
+  box-sizing:border-box;
   display: block;
-  width: 360px;
-  height: 400px;
-  position: relative;
-  left: 38%;
+  position:relative;
 }
 
 p.importantmess {
@@ -689,7 +690,7 @@ p.importantmess {
   font-style: italic;
 }
 
-input.support  ,#Receipt:invalid{
+input.support  ,#Receipt:invalid, #txtPurchase:invalid{
   font-family: "EkMukta";
   font-weight: lighter;
   box-sizing: border-box;
@@ -719,11 +720,14 @@ textarea.support:focus {
 }
 
 label {
+  font-family: "Aileron";
   display: inline-block;
   margin: 7px;
   width: 120px;
   margin-left:30px;
-  text-align: center;
+  cursor:pointer;
+  font-size: 13px;
+  text-align: left;
 }
 
 img.formimage {
@@ -757,9 +761,9 @@ input.submitt {
 }
 
 input.dateinp {
-  width: 157px;
+  width: 198px;
+  text-align:center;
 }
-/*--to add extras*/
 
 input.support:not(:focus):not(:placeholder-shown):invalid {
   background-color: #ffdddd;
@@ -787,14 +791,13 @@ input.support:not(:placeholder-shown):valid {
   src: url("../fonts/EkMukta-Regular.ttf");
 }
 
-label{
-  font-family: "Aileron";
-  font-size: 13px;
-  display: inline-block;
-  text-align: left;
+
+/*force placeholder appear in center*/
+::placeholder {
+   text-align: center;
 }
 
-
+/*//////////////////////////*/
 /* ########## end of forms pages########## */
 /* categories */
 figure.categories {
