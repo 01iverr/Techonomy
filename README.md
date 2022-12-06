@@ -14,3 +14,8 @@ The assignment consisted of 5 parts, each one advancing the previous ones, and w
 ## How to navigate
 
 Open the index file in the root directory, in order to access the diffenrent parts.
+
+## Prefer:
+
+Prefer to open the index file in part 5 to see the completed website. You can see the signup page clicking on the person icon up right (in part 5 only).
+To see the pages of the tv product or laptop go from the menu up left to Televisions category and press more info to the first product (same for the laptop).Only the first product on each category has extra page when you tap "more info".
