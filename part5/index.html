@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
-  <title> TechSupport </title>
+  <title> Techonomy </title>
   <link rel="icon" type="image/x-icon" href="../media/header-footer/techonomyicon.ico">
 </head>
 
@@ -82,51 +82,69 @@
     </header>
 
     <!-- ========================== Main ========================== -->
-    <main>
-      <h1> Contact us! </h1>
-      <img class="formimage" id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
 
-      <form class="support" action="/sendData" method="POST">
-        <label for="txtName">
-          Name*:
-        </label>
-        <input class="support" type="text" id="txtName" name="firstName" required placeholder="Dimitris" pattern="[A-Za-z ]{3,20}" title="Please write your name (or names with using space between of them) here.Its required field"> <br>
-        <label for="txtSurname">
-          Surname*:
-        </label>
-        <input class="support" type="text" id="txtSurname" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z ]{3,20}" title="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
-        <label for="txtEmail">
-          E-mail*:
-        </label>
-        <input class="support" type="email" id="txtEmail" name="email" required minlength="11" placeholder="techonomy@yahoo.gr" title="Please write your email here.Its required field"><br>
-        <label for="txtPhone">
-          Phone*:
-        </label>
-        <input class="support" type="tel" id="txtPhone" name="phone" pattern="[0-9]{10}" placeholder="6900000000" required title="Please write your 10 digit number phone here without country code.Its required field"> <br>
-        <label for="txtBarcode">
-          Barcode:
-        </label>
-        <input class="support" type="tel" id="txtBarcode" title="Please write the barcode of the product." name="barcode" placeholder="045786135" pattern="[0-9]{9}"><br>
-        <label for="txtPurchase">
-          Purchase*:
-        </label>
-        <input class="support dateinp" type="date" id="txtPurchase" name="purchase" min="2012-01-01" max="2023-02-02" required> <br>
-        <label id="problemtext" for="txtComments">
-          Problem*:
-        </label>
-        <textarea class="support" id="txtComments" name="comments" rows="9" cols="40" required title="Please describe the problem that you noticed about the product"
-          placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
-        <label for="Receipt">
-          Receipt*:
-        </label>
-        <input class="uploadfile" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" id="Receipt" name="receipt" type="file" required> <br>
+    <main id="index-page-components">
 
-        <input class="buttonsressub" type="reset" value="Clear all">
-        <input class="buttonsressub submitt" type="submit" value="Submit"><br>
-      </form>
+      <div id="company-imgs">
+        <img src="../media/header-footer/techonomy-no-bg.png" alt="TECHONOMY logo">
+        <img src="../media/header-footer/slogan.png" alt="TECHONOMY slogan">
+      </div>
 
-      <p class="importantmess">Please have in mind that you have to fullfill all the areas with star (*) </p>
+      <figure id="techonomy-descr">
+        <img srcset="../media/indexpage/aboutcomp-LR.png 300w,
+                     ../media/indexpage/aboutcomp.png 641w"
+          sizes="(max-width: 400px) 250px,
+                 (max-width: 1100px) 60vw,
+                 (max-width: 1200px) 40vw,
+                 480px"
+          src="../media/indexpage/aboutcomp.png"
+          alt="A photo that shows our company. We see two warehouses and several employees working to serve our customers using clarks and tracks.">
+        <figcaption>
+          <p>
+            Are you searching to buy technology items ? Are you frustrated with all
+            this shop that sells technology like its gold?
+          </p>
+          <p>
+            <strong> We can help you!</strong> Techonomy is here <strong> for you!</strong> <br>
+            We are a brand new e-shop where you can find everything you are looking for about technology!
+          </p>
+          <p>
+            From computing and mobiles to home entertainment stuff. We encourage
+            you to browse in our website to find your future device.
+          </p>
+        </figcaption>
+      </figure>
+
+      <div id="reviews">
+        <div class="full-width-stripe">
+          <h2>Our clients can speak for us :</h2>
+        </div>
+
+        <ul id="review-list">
+          <li>
+            <img src="../media/indexpage/strawberry-frog.png" alt="A profile picture that shows our customer Strawberry Frog" title="Strawberry Frog">
+            <div class="review-txt">
+              <p>Strawberry Frog</p>
+              <blockquote>
+                <b>I love Techonomy!</b> I have bought many things from this company. Everything was in a great quality and economy.
+              </blockquote>
+            </div>
+          </li>
+
+          <li>
+            <img src="../media/indexpage/dark-spirit.png" alt="A profile picture that shows our customer Dark Spirit" title="Dark Spirit">
+            <div class="review-txt">
+              <p>Dark Spirit</p>
+              <blockquote>
+                Techonomy is the <strong>best</strong> company! When my previous phone died they helped to find my new device. Amazing phone amazing people and all this for the best price!
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </main>
+
     <!-- ========================== FOOTER ========================== -->
     <footer class="footer-wrapper flex-column">
       <div class="footer-wrapper footer-main">

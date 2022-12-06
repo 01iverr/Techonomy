@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
-  <title> TechSupport </title>
+  <title> Product Categories </title>
   <link rel="icon" type="image/x-icon" href="../media/header-footer/techonomyicon.ico">
 </head>
 
@@ -82,51 +82,137 @@
     </header>
 
     <!-- ========================== Main ========================== -->
-    <main>
-      <h1> Contact us! </h1>
-      <img class="formimage" id="Telephoneimg" src="../media/form/telephone.png" alt="an image of a classic black telephone">
 
-      <form class="support" action="/sendData" method="POST">
-        <label for="txtName">
-          Name*:
-        </label>
-        <input class="support" type="text" id="txtName" name="firstName" required placeholder="Dimitris" pattern="[A-Za-z ]{3,20}" title="Please write your name (or names with using space between of them) here.Its required field"> <br>
-        <label for="txtSurname">
-          Surname*:
-        </label>
-        <input class="support" type="text" id="txtSurname" name="surName" required placeholder="Dimitrakopoulos" pattern="[A-Za-z ]{3,20}" title="Please write your surname (or surnames with using space between of them) here.Its required field"><br>
-        <label for="txtEmail">
-          E-mail*:
-        </label>
-        <input class="support" type="email" id="txtEmail" name="email" required minlength="11" placeholder="techonomy@yahoo.gr" title="Please write your email here.Its required field"><br>
-        <label for="txtPhone">
-          Phone*:
-        </label>
-        <input class="support" type="tel" id="txtPhone" name="phone" pattern="[0-9]{10}" placeholder="6900000000" required title="Please write your 10 digit number phone here without country code.Its required field"> <br>
-        <label for="txtBarcode">
-          Barcode:
-        </label>
-        <input class="support" type="tel" id="txtBarcode" title="Please write the barcode of the product." name="barcode" placeholder="045786135" pattern="[0-9]{9}"><br>
-        <label for="txtPurchase">
-          Purchase*:
-        </label>
-        <input class="support dateinp" type="date" id="txtPurchase" name="purchase" min="2012-01-01" max="2023-02-02" required> <br>
-        <label id="problemtext" for="txtComments">
-          Problem*:
-        </label>
-        <textarea class="support" id="txtComments" name="comments" rows="9" cols="40" required title="Please describe the problem that you noticed about the product"
-          placeholder="Please describe the problem that you noticed about the product..."></textarea> <br>
-        <label for="Receipt">
-          Receipt*:
-        </label>
-        <input class="uploadfile" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" id="Receipt" name="receipt" type="file" required> <br>
 
-        <input class="buttonsressub" type="reset" value="Clear all">
-        <input class="buttonsressub submitt" type="submit" value="Submit"><br>
-      </form>
+    <main id="product-categories-page-components">
 
-      <p class="importantmess">Please have in mind that you have to fullfill all the areas with star (*) </p>
+      <h1>
+        Products
+      </h1>
+
+      <ul>
+        <li>
+          <button>
+            <img src="../media/product-categories/cpu.png" alt="Chip icon created by Freepik - Flaticon">
+            Computing
+          </button>
+          <ul class="product-categories-list">
+            <li>
+              <button onclick="window.location.href='Category_laptops.html';">
+                <img src="../media/product-categories/laptop.png" alt="Laptop icon created by Freepik - Flaticon">
+                Laptop
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/computer.png" alt="Computer icon created by Freepik - Flaticon">
+                Desktop all in one
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/monitor.png" alt="Computer icons created by Freepik - Flaticon">
+                PC monitors
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/printer.png" alt="Printer icon created by Freepik - Flaticon">
+                Printers
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/keyboard-and-mouse.png" alt="Keyboard and mouse icon created by Freepik - Flaticon">
+                Accessories
+              </button>
+              <ul class="product-categories-list">
+                <li>
+                  <button>
+                    <img src="../media/product-categories/mouse.png" alt="Mouse icon created by Freepik - Flaticon">
+                    Mouse
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="../media/product-categories/keyboard.png" alt="Keyboard icon created by Good Ware - Flaticon">
+                    Keyboards
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="../media/product-categories/headphones.png" alt="Headphone icon created by Roundicons - Flaticon">
+                    Headphones
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/router.png" alt="Router icon created by Tanah Basah - Flaticon">
+                Networking and WiFi
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button>
+            <img src="../media/product-categories/responsive.png" alt="Tablet and Smartphone icon created by edt.im - Flaticon">
+            Mobile
+          </button>
+          <ul class="product-categories-list">
+            <li>
+              <button>
+                <img src="../media/product-categories/smartphone.png" alt="Smartphone icon created by Roundicons - Flaticon">
+                Smartphones
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/tablet.png" alt="Tablet icon created by Ehtisham Abid - Flaticon">
+                Tablets
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/smart-watch.png" alt="Smart watch icon created by PIXARTIST - Flaticon">
+                Watches
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button>
+            <img src="../media/product-categories/film.png" alt="TV with a film image on display icon created by Freepik - Flaticon">
+            Home entertainment
+          </button>
+          <ul class="product-categories-list">
+            <li>
+              <button onclick="window.location.href='Category_TV.html';">
+                <img src="../media/product-categories/television.png" alt="TV icon created by Freepik - Flaticon">
+                Televisions
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/game-controller.png" alt="Game controller icon created by Yogi Aprelliyanto - Flaticon">
+                Consoles
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="../media/product-categories/dvd.png" alt="Dvd player icon created by Freepik - Flaticon">
+                Dvd and blu-ray player
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
     </main>
+
     <!-- ========================== FOOTER ========================== -->
     <footer class="footer-wrapper flex-column">
       <div class="footer-wrapper footer-main">

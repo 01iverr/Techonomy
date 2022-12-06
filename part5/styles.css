@@ -1551,3 +1551,25 @@ button {
   background-size: 100%;
   cursor: pointer;
 }
+
+/*for index page in the first first page the one with the links for other parts (not in part 5)*/
+
+a.fp{
+  font-size: 30px;
+  font-family: CookieRegular;
+  margin-left: 10vw;
+}
+
+h2.fp{
+
+  font-family:CookieRegular;
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 0px;
+  font-style: italic;
+  margin-top: 6vw;
+}
+
+#firstindexpage{
+  background-color: #ffff99;
+}
