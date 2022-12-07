@@ -1,5 +1,5 @@
 # Techonomy
-A website for an eshop, made as a university assignment for the lesson "Technologies and Programmming of Web Applications" at AUEB.
+A website for an e-shop, made as a university assignment for the lesson "Technologies and Programming of Web Applications" at AUEB.
 
 ## Description
 
@@ -13,9 +13,9 @@ The assignment consisted of 5 parts, each one advancing the previous ones, and w
 
 ## How to navigate
 
-Open the index file in the root directory, in order to access the diffenrent parts.
+Open the index file in the root directory, in order to access the different parts.
 
 ## Prefer:
 
 Prefer to open the index file in part 5 to see the completed website. You can see the signup page clicking on the person icon up right (in part 5 only).
-To see the pages of the tv product or laptop go from the menu up left to Televisions category and press more info to the first product (same for the laptop).Only the first product on each category has extra page when you tap "more info".
+To see the pages of the tv product or laptop go from the menu up left to Televisions category and press more info to the first product (same for the laptop). Tap on "more info" on the first product of each category page to view individual product page.
